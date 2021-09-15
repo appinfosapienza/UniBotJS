@@ -1,3 +1,4 @@
 /token.env
 /.vscode
 /.git
+node_modules/
