@@ -2,4 +2,4 @@
 /.vscode
 /.git
 node_modules/
-/.json
+/package-lock.json
