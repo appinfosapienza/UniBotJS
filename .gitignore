@@ -1,5 +1,7 @@
-/token.env
+/.env
 /.vscode
 /.git
 node_modules/
 /package-lock.json
+/package.json
+/yarn.lock
