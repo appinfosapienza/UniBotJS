@@ -22,6 +22,6 @@ function correctOrario(orario){
     return orario != undefined ? orario : "fuoriOrario";
 }
 
-function correctMinuto(ora){
-    return minuto < 40 ? "lezioneInCorso" : "possibilePreLezione";
+function correctMinuto(minutaggio){
+    return minutaggio < 40 ? "lezioneInCorso" : "possibilePreLezione";
 }
