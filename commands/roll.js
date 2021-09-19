@@ -3,8 +3,8 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('roll')
-		.setDescription('Replies with each individual roll and the sum!')
-        .addStringOption(option => option.setName('input').setDescription('Enter a roll. Ex: 2d6 (rolls two times a six-faced dice)').setRequired(true)),
+		.setDescription('Risponde con ogni singolo roll e la somma di essi!')
+        .addStringOption(option => option.setName('input').setDescription('Inserisci un lancio. Ex: 2d6 (lancia due volte un dado a 6 facce)').setRequired(true)),
 
 	async execute(interaction) { //TODO: Handling error in the input format (maybe change to ask for 2 integers instead of a string?)
         await interaction.deferReply();
@@ -18,6 +18,6 @@ module.exports = {
             sumOfRolls+=rolledNumber;
             eachRollString+=rolledNumber+" ";
         }
-		await interaction.followUp("Each individual roll: "+eachRollString+"\nThe sum of all the rolls: "+sumOfRolls);
+		await interaction.followUp("Ogni singolo lancio: "+eachRollString+"\nLa somma di tutti i lanci: "+sumOfRolls);
 	},
 };

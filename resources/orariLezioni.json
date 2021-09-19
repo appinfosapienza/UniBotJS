@@ -1,0 +1,50 @@
+{
+    "1":{
+        "fuoriOrario":"Lezioni finite",
+        "13":"url della lezione",
+        "14":"url della lezione",
+        "15":"url della lezione",
+        "16":"url della lezione",
+        "17":"url della lezione",
+        "18":"url della lezione"
+    },
+    "2":{
+        "fuoriOrario":"Lezioni finite",
+        "13":"url della lezione",
+        "14":"url della lezione",
+        "15":"url della lezione",
+        "16":"url della lezione",
+        "17":"url della lezione",
+        "18":"url della lezione"
+    },
+    "3":{
+        "fuoriOrario":"Lezioni finite",
+        "13":"url della lezione",
+        "14":"url della lezione",
+        "15":"url della lezione",
+        "16":"url della lezione",
+        "17":"url della lezione",
+        "18":"url della lezione"
+    },
+    "4":{
+        "fuoriOrario":"Lezioni finite",
+        "13":"url della lezione",
+        "14":"url della lezione",
+        "15":"url della lezione",
+        "16":"url della lezione",
+        "17":"url della lezione",
+        "18":"url della lezione"
+    },
+    "5":{
+        "fuoriOrario":"Lezioni finite",
+        "13":"url della lezione",
+        "14":"url della lezione",
+        "15":"url della lezione",
+        "16":"url della lezione",
+        "17":"url della lezione",
+        "18":"url della lezione"
+    },
+    "altroGiorno":{
+        "fuoriOrario":"Lezioni finite e sei in vacanza!"
+    }
+}
