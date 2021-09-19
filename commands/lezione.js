@@ -7,9 +7,9 @@ module.exports = {
 	async execute(interaction) {
         const orari=require("../resources/orariLezioni.json");
         const dayObject= new Date();
-        const day=correctDay(orari[dayObject.getDay]);
-        const orario=correctOrario(orari[day][dayObject.getHours]);
-		await interaction.reply(orari[day][orario]);
+        const day=correctDay(orari[dayObject.getDay()]);
+        const orario=correctOrario(day[dayObject.getHours()]);
+		await interaction.reply(orario);
 	},
 };
 
