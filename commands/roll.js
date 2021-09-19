@@ -8,17 +8,16 @@ module.exports = {
 
 	async execute(interaction) { //TODO: Handling error in the input format (maybe change to ask for 2 integers instead of a string?)
         await interaction.deferReply();
-        const rawRollInput = parseInt(interaction.option.getString(input));
+        const rawRollInput = interaction.options.getString('input');
         const timesToRoll = parseInt(rawRollInput.split("d")[0]);
-        const dice = rawRollInput.split("d")[1];
-        const eachRollString = "";
-        const sumOfRolls=0;
+        const dice = parseInt(rawRollInput.split("d")[1]);
+        let eachRollString = "";
+        let sumOfRolls=0;
         for(let i=0; i<timesToRoll; i++){
             let rolledNumber=Math.floor(Math.random() * dice);
             sumOfRolls+=rolledNumber;
             eachRollString+=rolledNumber+" ";
         }
-
-		await interaction.reply("Each individual roll: "+eachRollString+"\nThe sum of all the rolls: "+sumOfRolls);
+		await interaction.followUp("Each individual roll: "+eachRollString+"\nThe sum of all the rolls: "+sumOfRolls);
 	},
 };

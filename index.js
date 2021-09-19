@@ -7,7 +7,7 @@ const { token } = require('./config.json');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 // Create a collection and then populate it with commands
-client.commands = new Collection();ù
+client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
