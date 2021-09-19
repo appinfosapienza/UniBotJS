@@ -9,7 +9,8 @@ module.exports = {
         const dayObject= new Date();
         const day=correctDay(orari[dayObject.getDay()]);
         const orario=correctOrario(day[dayObject.getHours()]);
-		await interaction.reply(orario);
+        const minuto=correctMinuto(dayObject.getMinutes());
+		await interaction.reply(orario[minuto]);
 	},
 };
 
@@ -19,4 +20,8 @@ function correctDay(day){
 
 function correctOrario(orario){
     return orario != undefined ? orario : "fuoriOrario";
+}
+
+function correctMinuto(ora){
+    return minuto < 40 ? "lezioneInCorso" : "possibilePreLezione";
 }

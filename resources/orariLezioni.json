@@ -1,50 +1,158 @@
 {
     "1":{
-        "fuoriOrario":"Lezioni finite",
-        "13":"url della lezione",
-        "14":"url della lezione",
-        "15":"url della lezione",
-        "16":"url della lezione",
-        "17":"url della lezione",
-        "18":"url della lezione"
+        "fuoriOrario":{
+            "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
+            "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
+        },
+        "13":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "14":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "15":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "16":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "17":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "18":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        }
     },
     "2":{
-        "fuoriOrario":"Lezioni finite",
-        "13":"url della lezione",
-        "14":"url della lezione",
-        "15":"url della lezione",
-        "16":"url della lezione",
-        "17":"url della lezione",
-        "18":"url della lezione"
+        "fuoriOrario":{
+            "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
+            "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
+        },
+        "13":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "14":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "15":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "16":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "17":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "18":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        }
     },
     "3":{
-        "fuoriOrario":"Lezioni finite",
-        "13":"url della lezione",
-        "14":"url della lezione",
-        "15":"url della lezione",
-        "16":"url della lezione",
-        "17":"url della lezione",
-        "18":"url della lezione"
+        "fuoriOrario":{
+            "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
+            "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
+        },
+        "13":{
+            "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
+            "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
+        },
+        "14":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "15":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "16":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "17":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "18":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        }
     },
     "4":{
-        "fuoriOrario":"Lezioni finite",
-        "13":"url della lezione",
-        "14":"url della lezione",
-        "15":"url della lezione",
-        "16":"url della lezione",
-        "17":"url della lezione",
-        "18":"url della lezione"
+        "fuoriOrario":{
+            "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
+            "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
+        },
+        "13":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "14":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "15":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "16":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "17":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "18":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        }
     },
     "5":{
-        "fuoriOrario":"Lezioni finite",
-        "13":"url della lezione",
-        "14":"url della lezione",
-        "15":"url della lezione",
-        "16":"url della lezione",
-        "17":"url della lezione",
-        "18":"url della lezione"
+        "fuoriOrario":{
+            "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
+            "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
+        },
+        "13":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "14":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "15":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "16":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "17":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
+        "18":{
+            "lezioneInCorso":"url della lezione",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        }
     },
     "altroGiorno":{
-        "fuoriOrario":"Lezioni finite e sei in vacanza!"
+        "fuoriOrario":{
+            "lezioneInCorso":"Sei in vacanza!",
+            "possibilePreLezione":"Sei in vacanza!"
+        }
     }
 }
