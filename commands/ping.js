@@ -1,13 +1,13 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-import embed from '../tools/baseEmbedFactory';
+const { baseEmbed } = require('../tools/baseEmbedFactory.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ping')
 		.setDescription('Risponde con Pong!'),
 	async execute(interaction) {
-		embed.setTitle("Pong?");
-		embed.setDescription("Pong!");
-		await interaction.reply({embeds: [embed]});
+		baseEmbed.setTitle("Pong?");
+		baseEmbed.setDescription("Pong!");
+		await interaction.reply({embeds: [baseEmbed]});
 	},
 };

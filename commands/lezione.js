@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { baseEmbed } = require('../tools/baseEmbedFactory.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -7,20 +8,25 @@ module.exports = {
 	async execute(interaction) {
         const orari=require("../resources/orariLezioni.json");
         const dayObject= new Date();
-        const day=correctDay(orari[dayObject.getDay()]);
-        const orario=correctOrario(day[dayObject.getHours()]);
+        const day=correctDay(orari[dayObject.getDay()], orari);
+        const orario=correctOrario(day[dayObject.getHours()], day);
         const minuto=correctMinuto(dayObject.getMinutes());
-		await interaction.reply(orario[minuto]);
+        baseEmbed.setTitle(orario['nomeLezione']);
+        baseEmbed.setDescription(orario[minuto]);
+        await interaction.reply({embeds: [baseEmbed]});
 	},
 };
 
-function correctDay(day){
-    return day != undefined ? day : "altroGiorno";
+
+function correctDay(day, orari){
+    return day != undefined ? day : orari['altroGiorno'];
 }
 
-function correctOrario(orario){
-    return orario != undefined ? orario : "fuoriOrario";
+
+function correctOrario(orario, day){
+    return orario != undefined ? orario : orario["fuoriOrario"];
 }
+
 
 function correctMinuto(minutaggio){
     return minutaggio < 40 ? "lezioneInCorso" : "possibilePreLezione";

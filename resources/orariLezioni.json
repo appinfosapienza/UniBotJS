@@ -1,158 +1,194 @@
 {
     "1":{
         "fuoriOrario":{
+            "nomeLezione": "Non c'è lezione",
             "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "13":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "14":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "15":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "18":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         }
     },
     "2":{
         "fuoriOrario":{
+            "nomeLezione": "Non c'è lezione",
             "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "13":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "14":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "15":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "18":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         }
     },
     "3":{
         "fuoriOrario":{
+            "nomeLezione": "Non c'è lezione",
             "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "13":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "14":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "15":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "18":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         }
     },
     "4":{
         "fuoriOrario":{
+            "nomeLezione": "Non c'è lezione",
             "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "13":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "14":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "15":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "18":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         }
     },
     "5":{
         "fuoriOrario":{
+            "nomeLezione": "Non c'è lezione",
             "lezioneInCorso":"Sei fuori orario, le lezioni non ci sono a quest'ora!",
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "13":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "14":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "15":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "18":{
+            "nomeLezione": "Metti il nome della materia",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         }
     },
     "altroGiorno":{
         "fuoriOrario":{
-            "lezioneInCorso":"Sei in vacanza!",
-            "possibilePreLezione":"Sei in vacanza!"
+            "nomeLezione": "Non c'è lezione",
+            "lezioneInCorso":"Buon Weekend!",
+            "possibilePreLezione":"Buon Weekend"
         }
     }
 }
