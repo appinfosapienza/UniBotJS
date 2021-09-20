@@ -3,12 +3,12 @@ const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("ping")
-    .setDescription("Risponde con Pong!"),
+    .setName("calendario")
+    .setDescription("Mostra il calendario delle lezioni"),
   async execute(interaction) {
     baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle("Pong?");
-    baseEmbed.setDescription("Pong!");
+    baseEmbed.setTitle("Calendario");
+    baseEmbed.setImage("https://i.imgur.com/bJAOE5C.png");
     await interaction.reply({ embeds: [baseEmbed] });
   },
 };

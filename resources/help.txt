@@ -1,0 +1,23 @@
+**/ora**: Printa l'ora attuale
+**/role**: Per avere informazioni sui ruoli disponibili sul server
+**/lezione**: Per ricevere il link della lezione online di quell'ora!
+**/docenti**: per avere tutti i collegamenti ai siti dei professori
+**/ricevimento**: per ottenere tutti i link dei ricevimenti dei docenti
+**/calendario**: per ricevere un'immagine dell'orario settimanale
+**/fatti**: Fatti curiosi di cui non sei a conoscenza di cui il bot vuole parlarti!
+**/roll** **XdY**: Lancio dei dadi: per lanciare X volte un dado da Y facce.
+Il massimo è 200 facce e 200 lanci. I valori negativi non sono accettati    
+**/uptime**: Visualizza l'ora e la data di attivazione del bot
+
+**Funzioni Musicali**:
+
+**/play "nome pezzo"**: Per riprodurre un brano
+**/np**: Per sapere quale brano è in riproduzione
+**/pause**: Per mettere in pausa
+**/resume**: Per riprendere la riproduzione
+**/volume**: Per modificare il volume
+**/disconnect**: Per disconnettere il bot dal canale vocale
+**/queue**: Per visualizzare i brani in coda
+**/clear**: Per eliminare la coda
+**/skip**: Per passare al brano successivo
+**/stop**: Per stoppare la riproduzione
