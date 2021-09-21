@@ -5,21 +5,21 @@ const fs = require("fs");
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("help")
-    .setDescription("Mostra un breve riassunto di tutti i comandi del bot"),
+    .setName("docenti")
+    .setDescription("Mostra i link ai siti dei prof"),
   async execute(interaction) {
     let data = "";
     try {
       data = fs.readFileSync(
-        path.join(__dirname, "../resources/help.txt"),
+        path.join(__dirname, "../resources/docenti.txt"),
         "utf8"
       );
     } catch (err) {
       console.error(err);
     }
     baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle("UniBot 4.0 Help");
+    baseEmbed.setTitle("Link siti dei professori");
     baseEmbed.setDescription(data);
     await interaction.reply({ embeds: [baseEmbed] });
-  },
-};
+	}   
+}

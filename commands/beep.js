@@ -5,6 +5,9 @@ module.exports = {
     .setName("beep")
     .setDescription("Risponde con Boop, soltanto a te!"),
   async execute(interaction) {
-    await interaction.reply({ content: "Boop!", ephemeral: true }); // This response will be visible only to the user who invoked this command
+    baseEmbed = baseEmbedGenerator();
+    baseEmbed.setTitle("Beep?");
+    baseEmbed.setDescription("BOOP!");
+    await interaction.reply({ embeds: [baseEmbed], ephemeral: true }); // This response will be visible only to the user who invoked this command
   },
 };

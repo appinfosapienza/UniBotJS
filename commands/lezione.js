@@ -6,26 +6,31 @@ module.exports = {
     .setName("lezione")
     .setDescription("Risponde con il link della lezione corrente!"),
   async execute(interaction) {
-    const orari = require("../resources/orariLezioni.json");
+    const rawJsonOrari = require("../resources/orariLezioni.json");
     const dayObject = new Date();
-    const day = correctDay(orari[dayObject.getDay()], orari);
+    const day = correctDay(rawJsonOrari[dayObject.getDay()], rawJsonOrari);
     const orario = correctOrario(day[dayObject.getHours()], day);
     const minuto = correctMinuto(dayObject.getMinutes());
+    const minutoNomeLezione = correctMinutoPerNomeLezione(dayObject.getMinutes());
     baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle(orario["nomeLezione"]);
+    baseEmbed.setTitle(orario[minutoNomeLezione]);
     baseEmbed.setDescription(orario[minuto]);
     await interaction.reply({ embeds: [baseEmbed] });
   },
 };
 
-function correctDay(day, orari) {
-  return day != undefined ? day : orari["altroGiorno"];
+function correctDay(day, rawJsonOrari) {
+  return day != undefined ? day : rawJsonOrari["altroGiorno"];
 }
 
 function correctOrario(orario, day) {
-  return orario != undefined ? orario : orario["fuoriOrario"];
+  return orario != undefined ? orario : day["fuoriOrario"];
 }
 
 function correctMinuto(minutaggio) {
   return minutaggio < 40 ? "lezioneInCorso" : "possibilePreLezione";
+}
+
+function correctMinutoPerNomeLezione(minutaggio) {
+  return minutaggio < 40 ? "nomeLezione" : "nomeProssimaLezione";
 }
