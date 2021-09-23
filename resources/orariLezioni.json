@@ -52,26 +52,26 @@
         },
         "12":{
             "nomeLezione": "Non c'è lezione",
-            "nomeProssimaLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra, Prof. Papi",
             "lezioneInCorso":"Le lezioni cominceranno tra poco, ma ora non ci sono!",
             "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "13":{
-            "nomeLezione": "Algebra prof. Papi",
-            "nomeProssimaLezione": "Algebra prof. Papi",
+            "nomeLezione": "Algebra, Prof. Papi",
+            "nomeProssimaLezione": "Algebra, Prof. Papi",
             "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "14":{
-            "nomeLezione": "Algebra prof. Papi",
-            "nomeProssimaLezione": "Algebra prof. Papi",
+            "nomeLezione": "Algebra, Prof. Papi",
+            "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
             "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "15":{
-            "nomeLezione": "Algebra prof. Papi",
+            "nomeLezione": "Basi di Dati I, Prof. De Marsico",
             "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
@@ -114,18 +114,18 @@
         },
         "15":{
             "nomeLezione": "Sistemi Operativi I, Prof. ---",
-            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof Faggionato",
+            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
-            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof Faggionato",
-            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof Faggionato",
+            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
+            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
-            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof Faggionato",
+            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
             "nomeProssimaLezione": "Nessuna lezione dopo!",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"La lezione sta per finire!"
@@ -140,36 +140,36 @@
         },
         "12":{
             "nomeLezione": "Non c'è lezione",
-            "nomeProssimaLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra, Prof. Papi",
             "lezioneInCorso":"Le lezioni cominceranno tra poco, ma ora non ci sono!",
             "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "13":{
-            "nomeLezione": "Algebra prof. Papi",
-            "nomeProssimaLezione": "Algebra prof. Papi",
+            "nomeLezione": "Algebra, Prof. Papi",
+            "nomeProssimaLezione": "Algebra, Prof. Papi",
             "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "14":{
-            "nomeLezione": "Algebra prof. Papi",
-            "nomeProssimaLezione": "Algebra prof. Papi",
+            "nomeLezione": "Algebra, Prof. Papi",
+            "nomeProssimaLezione": "Algebra, Prof. Papi",
             "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "15":{
-            "nomeLezione": "Algebra prof. Papi",
-            "nomeProssimaLezione": "Algebra prof. Papi",
-            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
-            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
-        },
-        "16":{
-            "nomeLezione": "Algebra prof. Papi",
-            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof Faggionato",
+            "nomeLezione": "Algebra, Prof. Papi",
+            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
             "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
+        "16":{
+            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
+            "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
+            "lezioneInCorso":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo",
+            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+        },
         "17":{
-            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof Faggionato",
+            "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
             "nomeProssimaLezione": "Nessuna lezione dopo!",
             "lezioneInCorso":"url della lezione",
             "possibilePreLezione":"La lezione sta per finire!"
@@ -183,7 +183,7 @@
             "possibilePreLezione":"Sei fuori orario, le lezioni non ci sono a quest'ora!"
         },
         "12":{
-            "nomeLezione": "Basi di Dati I, Prof. De Marsico",
+            "nomeLezione": "Non c'è lezione",
             "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
             "lezioneInCorso":"Le lezioni cominceranno tra poco, ma ora non ci sono!",
             "possibilePreLezione":"url della lezione delle 13"
