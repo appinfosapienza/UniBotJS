@@ -7,8 +7,11 @@ module.exports = {
     .setDescription("Risponde con Pong!"),
   async execute(interaction) {
     baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle("Pong?");
+    baseEmbed.setTitle("Ping?");
     baseEmbed.setDescription("Pong!");
-    await interaction.reply({ embeds: [baseEmbed] });
+    baseEmbed.setImage(
+      "https://www.dagospia.com/img/foto/11-2018/luigi-di-maio-ping-pong-1078295.jpg"
+    );
+    await interaction.reply({ embeds: [baseEmbed], ephemeral: true });
   },
 };
