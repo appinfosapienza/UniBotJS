@@ -38,15 +38,9 @@
         },
         "17":{
             "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
+            "nomeProssimaLezione": "Nessuna lezione dopo!",
             "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
-        },
-        "18":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "possibilePreLezione":"La lezione sta per finire!"
         }
     },
     "2":{
@@ -58,26 +52,26 @@
         },
         "12":{
             "nomeLezione": "Non c'è lezione",
-            "nomeProssimaLezione": "Lezione delle 13",
+            "nomeProssimaLezione": "Algebra prof. Papi",
             "lezioneInCorso":"Le lezioni cominceranno tra poco, ma ora non ci sono!",
-            "possibilePreLezione":"url della lezione delle 13"
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "13":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Lezione delle 14",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra prof. Papi",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "14":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra prof. Papi",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "15":{
-            "nomeLezione": "Metti il nome della materia",
+            "nomeLezione": "Algebra prof. Papi",
             "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "16":{
@@ -88,15 +82,9 @@
         },
         "17":{
             "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
+            "nomeProssimaLezione": "Nessuna lezione dopo!",
             "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
-        },
-        "18":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "possibilePreLezione":"La lezione sta per finire!"
         }
     },
     "3":{
@@ -138,15 +126,9 @@
         },
         "17":{
             "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
+            "nomeProssimaLezione": "Nessuna lezione dopo!",
             "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
-        },
-        "18":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "possibilePreLezione":"La lezione sta per finire!"
         }
     },
     "4":{
@@ -158,45 +140,39 @@
         },
         "12":{
             "nomeLezione": "Non c'è lezione",
-            "nomeProssimaLezione": "Lezione delle 13",
+            "nomeProssimaLezione": "Algebra prof. Papi",
             "lezioneInCorso":"Le lezioni cominceranno tra poco, ma ora non ci sono!",
-            "possibilePreLezione":"url della lezione delle 13"
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "13":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Lezione delle 14",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra prof. Papi",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "14":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra prof. Papi",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "15":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra prof. Papi",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "16":{
-            "nomeLezione": "Metti il nome della materia",
+            "nomeLezione": "Algebra prof. Papi",
             "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
             "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
         },
         "17":{
             "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
+            "nomeProssimaLezione": "Nessuna lezione dopo!",
             "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
-        },
-        "18":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "possibilePreLezione":"La lezione sta per finire!"
         }
     },
     "5":{
@@ -220,33 +196,21 @@
         },
         "14":{
             "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
+            "nomeProssimaLezione": "Algebra prof. Papi",
             "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "15":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Algebra prof. Papi",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"Link Zoom: ID 868 521 7547, password 314366"
         },
         "16":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
-        },
-        "17":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
-        },
-        "18":{
-            "nomeLezione": "Metti il nome della materia",
-            "nomeProssimaLezione": "Nome lezione successiva",
-            "lezioneInCorso":"url della lezione",
-            "possibilePreLezione":"url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+            "nomeLezione": "Algebra prof. Papi",
+            "nomeProssimaLezione": "Nessuna lezione dopo!",
+            "lezioneInCorso":"Link Zoom: ID 868 521 7547, password 314366",
+            "possibilePreLezione":"La lezione sta per finire!"
         }
     },
     "altroGiorno":{

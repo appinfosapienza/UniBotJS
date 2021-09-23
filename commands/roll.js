@@ -23,7 +23,7 @@ module.exports = {
     let eachRollString = "";
     let sumOfRolls = 0;
     for (let i = 0; i < timesToRoll; i++) {
-      let rolledNumber = Math.floor(Math.random() * dice);
+      let rolledNumber = Math.floor(Math.random() * dice+1);
       sumOfRolls += rolledNumber;
       eachRollString += rolledNumber + " ";
     }
