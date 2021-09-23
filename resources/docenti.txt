@@ -1,5 +1,4 @@
-**Papi**: link1
-**De Santis**: link2
-**Faggionato**: link3
-**De Marsico**: link4
-**Da definire lul**: link5
+**Papi**: https://corsidilaurea.uniroma1.it/it/users/paolopapiuniroma1it
+**De Santis**: https://corsidilaurea.uniroma1.it/it/users/emiliodesantisuniroma1it
+**De Marsico**: https://corsidilaurea.uniroma1.it/it/users/mariademarsicouniroma1it
+**Da definire**: Docente non ancora assegnato

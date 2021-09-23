@@ -1,6 +1,6 @@
 **/lezione**: Per ricevere il link della lezione online di quell'ora!
 **/docenti**: per avere tutti i collegamenti ai siti dei professori
-**/ricevimento**: per ottenere tutti i link dei ricevimenti dei docenti
+**/ricevimenti**: per ottenere tutti i link dei ricevimenti dei docenti
 **/calendario**: per ricevere un'immagine dell'orario settimanale
 **/fatti**: Fatti curiosi di cui non sei a conoscenza di cui il bot vuole parlarti!
 **/roll** **XdY**: Lancio dei dadi: per lanciare X volte un dado da Y facce.  
