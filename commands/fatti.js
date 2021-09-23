@@ -1,7 +1,8 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
+const path = require("path");
 const fs = require("fs");
-const readline = require('readline');
+const readline = require("readline");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -10,15 +11,17 @@ module.exports = {
   async execute(interaction) {
     let fattiArray = [];
 
-    const fileStream = fs.createReadStream('../resources/fatti.txt');
+    const fileStream = fs.createReadStream(
+      path.join(__dirname, "../resources/fatti.txt")
+    );
     const rl = readline.createInterface({
       input: fileStream,
       crlfDelay: Infinity,
-      terminal: true
+      terminal: true,
     });
     // Note: we use the crlfDelay option to recognize all instances of CR LF
     // ('\r\n') in input.txt as a single line break.
-  
+
     for await (const line of rl) {
       // Each line in input.txt will be successively available here as `line`.
       fattiArray.push(line);
@@ -26,7 +29,7 @@ module.exports = {
     rl.close();
     const randomFactLineNumber = Math.floor(Math.random() * fattiArray.length);
     baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle("Fatto curioso #"+randomFactLineNumber);
+    baseEmbed.setTitle("Fatto curioso #" + randomFactLineNumber);
     baseEmbed.setDescription(fattiArray[randomFactLineNumber]);
     await interaction.reply({ embeds: [baseEmbed], ephemeral: true });
   },
