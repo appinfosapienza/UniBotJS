@@ -10,24 +10,24 @@
       "nomeLezione": "Non c'è lezione",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "url della lezione delle 13"
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "13": {
       "nomeLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "url della lezione",
-      "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "14": {
       "nomeLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "url della lezione",
-      "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "15": {
       "nomeLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Sistemi Operativi I, Prof. ---",
-      "lezioneInCorso": "url della lezione",
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
       "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
     },
     "16": {
@@ -116,18 +116,18 @@
       "nomeLezione": "Sistemi Operativi I, Prof. ---",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "lezioneInCorso": "url della lezione",
-      "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "16": {
       "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "url della lezione",
-      "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "17": {
       "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "url della lezione",
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
@@ -160,18 +160,18 @@
       "nomeLezione": "Algebra, Prof. Papi",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "lezioneInCorso": "Link Zoom: ID 831 4117 9216",
-      "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "16": {
       "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo",
-      "possibilePreLezione": "url della lezione seguente o di questa lezione se ci sarà comunque questa anche l'ora dopo"
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
+      "possibilePreLezione": "https://meet.google.com/oaw-nssx-nbc"
     },
     "17": {
       "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "url della lezione",
+      "lezioneInCorso": "https://meet.google.com/oaw-nssx-nbc",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
