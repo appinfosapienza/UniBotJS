@@ -3,6 +3,9 @@
 **/ricevimenti**: per ottenere tutti i link dei ricevimenti dei docenti
 **/calendario**: per ricevere un'immagine dell'orario settimanale
 **/fatti**: Fatti curiosi di cui non sei a conoscenza di cui il bot vuole parlarti!
-**/roll** **XdY**: Lancio dei dadi: per lanciare X volte un dado da Y facce.  
+**/roll** **XdY**: Lancio dei dadi: per lanciare X volte un dado da Y facce.
 
-Powered By @BotDeveloper
+Per altri comandi e info più specifiche è anche possibile semplicemente scrivere il carattere '/'
+
+Il nostro bot è anche Open Source! 
+Basta cliccare sul nome del bot presente all'interno dell'embed e sarete reindirizzati alla nostra repository
