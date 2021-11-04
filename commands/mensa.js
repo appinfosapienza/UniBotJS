@@ -1,7 +1,5 @@
-let path = require("path");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
-const fs = require("fs");
 const axios = require("axios");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
@@ -17,13 +15,22 @@ module.exports = {
 };
 //connect to a specific URL and return the HTML source using AXIOS
 async function getHTML() {
-  const { data } = await axios
+  //Si lo sappiamo è brutto, e c'è una soluzione più elegante, ma non ne ho trovato una
+  let ciao = false;
+  await axios
     .get("http://www.cimasristorazione.com/menu-mense/universita-roma-1/")
     .catch(function (error) {
       baseEmbed.setTitle("C'è stato un errore");
       baseEmbed.setDescription("Come da titolo");
       baseEmbed.setFooter("With an helping hand By GitHub Copilot");
+      ciao = true;
     });
+  if (ciao) {
+    return;
+  }
+  const { data } = await axios.get(
+    "http://www.cimasristorazione.com/menu-mense/universita-roma-1/"
+  );
   //create JSDOM object
   const { document } = new JSDOM(data).window;
   let day = getDay();
