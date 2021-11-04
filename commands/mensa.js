@@ -8,13 +8,9 @@ module.exports = {
   data: new SlashCommandBuilder().setName("mensa").setDescription("Yummy!"),
   async execute(interaction) {
     await interaction.deferReply();
-    let returne = await getHTML(
+    await getHTML(
       "http://www.cimasristorazione.com/menu-mense/universita-roma-1/"
     );
-    console.log(returne);
-    baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle("Link ricevimenti dei professori");
-    baseEmbed.setDescription("Funziona");
     await interaction.followUp({ embeds: [baseEmbed] });
   },
 };
@@ -24,9 +20,15 @@ async function getHTML(url) {
     .get(url)
     .then(function (response) {
       let ret = response.data;
-      return ret;
+      console.log(ret);
+      baseEmbed = baseEmbedGenerator();
+      baseEmbed.setTitle("Link ricevimenti dei professori");
+      baseEmbed.setDescription("Funziona");
     })
     .catch(function (error) {
       console.log(error);
+      baseEmbed = baseEmbedGenerator();
+      baseEmbed.setTitle("Link ricevimenti dei professori");
+      baseEmbed.setDescription("Errore bruh");
     });
 }
