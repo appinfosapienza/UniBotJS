@@ -15,22 +15,19 @@ module.exports = {
 };
 //connect to a specific URL and return the HTML source using AXIOS
 async function getHTML() {
-  //Si lo sappiamo è brutto, e c'è una soluzione più elegante, ma non ne ho trovato una
-  let ciao = false;
-  await axios
+  const { data } = await axios
     .get("http://www.cimasristorazione.com/menu-mense/universita-roma-1/")
-    .catch(function (error) {
-      baseEmbed.setTitle("C'è stato un errore");
-      baseEmbed.setDescription("Come da titolo");
-      baseEmbed.setFooter("With an helping hand By GitHub Copilot");
-      ciao = true;
+    .catch((err) => {
+      baseEmbed.setTitle("Errore");
+      baseEmbed.setDescription(
+        "C'è stato un errore durante la connessione al sito della mensa"
+      );
+      return true;
     });
-  if (ciao) {
+  //if there is no error, parse the HTML
+  if (data === undefined) {
     return;
   }
-  const { data } = await axios.get(
-    "http://www.cimasristorazione.com/menu-mense/universita-roma-1/"
-  );
   //create JSDOM object
   const { document } = new JSDOM(data).window;
   let day = getDay();
