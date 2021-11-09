@@ -35,19 +35,33 @@ async function getHTML() {
     let roba = document.getElementById(day);
     //convert HTMLDivElement to string
     let html = roba.innerHTML;
+    console.log(html);
     let menu = html
       .replace(/<h5>/g, "")
       .replace(/<\/h5>/g, "\n")
       .replace(/<ul>/g, "")
       .replace(/<\/ul>/g, "\n")
       .replace(/<li>/g, "-")
-      .replace(/<\/li>/g, "\n");
-    baseEmbed.setTitle("Ecco cosa ci sarà oggi a pranzo alla mensa");
+      .replace(/<\/li>/g, "\n")
+      .replace(/&nbsp;/g, "");
+    let d = new Date();
+    let date = d.getDate() + "/" + (d.getMonth() + 1);
+    baseEmbed.setTitle(
+      "Menu della mensa De Lollis di oggi, \n" +
+        getDayOfWeek() +
+        " " +
+        d.getDate() +
+        " " +
+        getMonth()
+    );
+    console.log(menu);
     baseEmbed.setDescription(menu);
     baseEmbed.setFooter("With an helping hand By GitHub Copilot");
   } else {
-    baseEmbed.setTitle("Ecco cosa ci sarà oggi a pranzo alla mensa");
-    baseEmbed.setDescription("Non c'è niente a pranzo");
+    baseEmbed.setTitle("Mensa chiusa");
+    baseEmbed.setDescription(
+      "Oggi la mensa è chiusa, non c'è nulla per pranzo"
+    );
     baseEmbed.setFooter("With an helping hand By GitHub Copilot");
   }
 }
@@ -57,4 +71,57 @@ function getDay() {
   let d = new Date();
   let day = d.getDay();
   return "pranzo-" + day;
+}
+
+//return the month in a string format
+function getMonth() {
+  let d = new Date();
+  let month = d.getMonth();
+  switch (month) {
+    case 0:
+      return "Gennaio";
+    case 1:
+      return "Febbraio";
+    case 2:
+      return "Marzo";
+    case 3:
+      return "Aprile";
+    case 4:
+      return "Maggio";
+    case 5:
+      return "Giugno";
+    case 6:
+      return "Luglio";
+    case 7:
+      return "Agosto";
+    case 8:
+      return "Settembre";
+    case 9:
+      return "Ottobre";
+    case 10:
+      return "Novembre";
+    case 11:
+      return "Dicembre";
+  }
+}
+
+//get the day of the week in a string format
+function getDayOfWeek() {
+  let day = getDay();
+  switch (day) {
+    case "pranzo-0":
+      return "Domenica";
+    case "pranzo-1":
+      return "Lunedì";
+    case "pranzo-2":
+      return "Martedì";
+    case "pranzo-3":
+      return "Mercoledì";
+    case "pranzo-4":
+      return "Giovedì";
+    case "pranzo-5":
+      return "Venerdì";
+    case "pranzo-6":
+      return "Sabato";
+  }
 }
