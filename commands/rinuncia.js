@@ -7,7 +7,10 @@ module.exports = {
     .setDescription("Non credo ci sia bisogno di descrizione"),
   async execute(interaction) {
     console.log(
-      interaction.user.username + "#" + interaction.user.discriminator
+      interaction.user.username +
+        "#" +
+        interaction.user.discriminator +
+        " ha rinunciato agli studi"
     );
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Rinuncia agli studi");
