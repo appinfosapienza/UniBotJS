@@ -35,7 +35,6 @@ async function getHTML() {
     let roba = document.getElementById(day);
     //convert HTMLDivElement to string
     let html = roba.innerHTML;
-    console.log(html);
     let menu = html
       .replace(/<h5>/g, "")
       .replace(/<\/h5>/g, "\n")
@@ -54,7 +53,6 @@ async function getHTML() {
         " " +
         getMonth()
     );
-    console.log(menu);
     baseEmbed.setDescription(menu);
     baseEmbed.setFooter("With an helping hand By GitHub Copilot");
   } else {
