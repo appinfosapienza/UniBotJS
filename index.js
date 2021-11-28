@@ -1,10 +1,12 @@
 // Require the necessary discord.js classes
 const fs = require("fs"); // fs is Node's native file system module
 const { Client, Collection, Intents } = require("discord.js");
-const { token } = require("./config.json");
+const { token, AdminChannel } = require("./config.json");
 
 // Create a new client instance
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+});
 
 // Create a collection and then populate it with commands
 client.commands = new Collection();
@@ -23,10 +25,16 @@ client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-// Commands handling
+// Utilize this command if you need to restart the bot
+client.on("messageCreate", async (message) => {
+  if (message.content === "!restartBot" && message.channel == AdminChannel) {
+    console.log("Restarting bot...");
+    client.destroy();
+  }
+});
+
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) return;
-
   const command = client.commands.get(interaction.commandName);
 
   if (!command) return; // If command does not exist in the map, it returns null, so we exit early
