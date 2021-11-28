@@ -28,6 +28,7 @@ client.once("ready", () => {
 // Utilize this command if you need to restart the bot
 client.on("messageCreate", async (message) => {
   if (message.content === "!restartBot" && message.channel == AdminChannel) {
+    await message.reply("Restarting...");
     console.log("Restarting bot...");
     client.destroy();
   }
