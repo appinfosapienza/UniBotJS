@@ -2,8 +2,8 @@
 - https://elearning.uniroma1.it/course/view.php?id=13653
 **Probabilità**: 
 - https://elearning.uniroma1.it/course/view.php?id=13937
-- allun.ga/DriveProbabilità
+- https://allun.ga/DriveProbabilità
 **Basi di Dati**: 
-- allun.ga/SitoDeMarsico
+- https://allun.ga/SitoDeMarsico
 **Sistemi Operativi**: 
 - https://www.8linux.org/lbg/content/sapienza-so-modulo-i-2021-2022
