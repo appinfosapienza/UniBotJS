@@ -8,6 +8,9 @@ module.exports = {
   async execute(interaction) {
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Calendario");
+    baseEmbed.setDescription(
+      "**ATTENZIONE:**\n Il **lunedì** la prima lezione è quella di Sistemi Operativi (2 ore) \n Seguirà poi la lezione di Probabilità (3 ore)"
+    );
     baseEmbed.setImage("https://i.imgur.com/kc2qetL.jpg");
     await interaction.reply({ embeds: [baseEmbed] });
   },
