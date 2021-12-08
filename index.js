@@ -1,11 +1,19 @@
 // Require the necessary discord.js classes
 const fs = require("fs"); // fs is Node's native file system module
 const { Client, Collection, Intents } = require("discord.js");
-const { token, AdminChannel } = require("./config.json");
+/*Create a config.json file in the same directory as the bot
+with the following format:
+{
+  "token": "your_token_here",
+  "adminChannel": "your_admin_channel_id_here",
+  "newsChannel": "your_news_channel_id_here",
+}
+*/
+const { token, adminChannel, newsChannel } = require("./config.json");
 const { baseEmbedGenerator } = require("./tools/baseEmbedFactory.js");
-const { rss_fetcher } = require("./tools/scriptino.js");
+const { rss_fetcher } = require("./tools/rss_fetcher.js");
 let channel;
-let rss_feed = "";
+let rss_feed = ["", ""];
 
 // Create a new client instance
 const client = new Client({
@@ -27,16 +35,17 @@ for (const file of commandFiles) {
 // When the client is ready, run this code (only once)
 client.once("ready", async () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  const channelID = "889181970159009855";
+  const channelID = newsChannel;
   channel = await client.channels.fetch(channelID);
 });
 
 // Utilize this command if you need to restart the bot
 client.on("messageCreate", async (message) => {
-  if (message.content === "!restartBot" && message.channel == AdminChannel) {
+  if (message.content === "!restartBot" && message.channel == adminChannel) {
     await message.reply("Restarting...");
     console.log("Restarting bot...");
     client.destroy();
+    process.exit(0);
   }
 });
 
@@ -60,21 +69,30 @@ client.on("interactionCreate", async (interaction) => {
 // Login to Discord with your client's token
 client.login(token);
 
+// RSS Feed Fetcher
 var intervalId = setInterval(async function () {
-  console.log("Checking for new RSS feed...");
   let newRssFeed = await rss_fetcher();
-  if (newRssFeed != rss_feed && rss_feed != "") {
+  if (
+    newRssFeed[1] != rss_feed[1] &&
+    newRssFeed[0] != rss_feed[0] &&
+    rss_feed[0] != ""
+  ) {
     baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle("News");
-    baseEmbed.setDescription(newRssFeed);
+    baseEmbed.setTitle(newRssFeed[0]);
+    baseEmbed.setDescription(newRssFeed[1]);
     baseEmbed.setFooter(
       "Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
       "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
     );
     channel.send({ embeds: [baseEmbed] });
-    rss_feed = newRssFeed;
+    rss_feed[0] = newRssFeed[0];
+    rss_feed[1] = newRssFeed[1];
+    console.log("New RSS Feed fetched! " + rss_feed[0] + " " + rss_feed[1]);
   }
-  if (rss_feed == "") {
-    rss_feed = newRssFeed;
+  if (rss_feed[0] == "") {
+    console.log("RSS Feed is empty, fetching...");
+    rss_feed[0] = newRssFeed[0];
+    rss_feed[1] = newRssFeed[1];
+    console.log("RSS Feed fetched! " + rss_feed[0] + " " + rss_feed[1]);
   }
-}, 5000);
+}, 10000);
