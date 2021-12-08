@@ -54,13 +54,19 @@ async function getHTML() {
         getMonth()
     );
     baseEmbed.setDescription(menu);
-    baseEmbed.setFooter("With an helping hand By GitHub Copilot");
+    baseEmbed.setFooter(
+      "With an helping hand By GitHub Copilot",
+      "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
+    );
   } else {
     baseEmbed.setTitle("Mensa chiusa");
     baseEmbed.setDescription(
       "Oggi la mensa è chiusa, non c'è nulla per pranzo"
     );
-    baseEmbed.setFooter("With an helping hand By GitHub Copilot");
+    baseEmbed.setFooter(
+      "With an helping hand By GitHub Copilot",
+      "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
+    );
   }
 }
 
