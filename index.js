@@ -2,6 +2,10 @@
 const fs = require("fs"); // fs is Node's native file system module
 const { Client, Collection, Intents } = require("discord.js");
 const { token, AdminChannel } = require("./config.json");
+const { baseEmbedGenerator } = require("./tools/baseEmbedFactory.js");
+const { rss_fetcher } = require("./tools/scriptino.js");
+let channel;
+let rss_feed = "";
 
 // Create a new client instance
 const client = new Client({
@@ -21,8 +25,10 @@ for (const file of commandFiles) {
 }
 
 // When the client is ready, run this code (only once)
-client.once("ready", () => {
+client.once("ready", async () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  const channelID = "889181970159009855";
+  channel = await client.channels.fetch(channelID);
 });
 
 // Utilize this command if you need to restart the bot
@@ -53,3 +59,17 @@ client.on("interactionCreate", async (interaction) => {
 
 // Login to Discord with your client's token
 client.login(token);
+
+var intervalId = setInterval(async function () {
+  console.log("Checking for new RSS feed...");
+  let newRssFeed = await rss_fetcher();
+  if (newRssFeed != rss_feed && rss_feed != "") {
+    baseEmbed = baseEmbedGenerator();
+    baseEmbed.setDescription(newRssFeed);
+    channel.send({ embeds: [baseEmbed] });
+    rss_feed = newRssFeed;
+  }
+  if (rss_feed == "") {
+    rss_feed = newRssFeed;
+  }
+}, 5000);
