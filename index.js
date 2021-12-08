@@ -65,7 +65,12 @@ var intervalId = setInterval(async function () {
   let newRssFeed = await rss_fetcher();
   if (newRssFeed != rss_feed && rss_feed != "") {
     baseEmbed = baseEmbedGenerator();
+    baseEmbed.setTitle("News");
     baseEmbed.setDescription(newRssFeed);
+    baseEmbed.setFooter(
+      "Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
+      "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
+    );
     channel.send({ embeds: [baseEmbed] });
     rss_feed = newRssFeed;
   }
