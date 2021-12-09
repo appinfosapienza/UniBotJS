@@ -13,7 +13,7 @@ const { token, adminChannel, newsChannel } = require("./config.json");
 const { baseEmbedGenerator } = require("./tools/baseEmbedFactory.js");
 const { rss_fetcher } = require("./tools/rss_fetcher.js");
 let channel;
-let rss_feed = ["", ""];
+let rss_feed = JSON;
 
 // Create a new client instance
 const client = new Client({
@@ -72,27 +72,35 @@ client.login(token);
 // RSS Feed Fetcher
 var intervalId = setInterval(async function () {
   let newRssFeed = await rss_fetcher();
-  if (
-    newRssFeed[1] != rss_feed[1] &&
-    newRssFeed[0] != rss_feed[0] &&
-    rss_feed[0] != ""
-  ) {
-    baseEmbed = baseEmbedGenerator();
-    baseEmbed.setTitle(newRssFeed[0]);
-    baseEmbed.setDescription(newRssFeed[1]);
-    baseEmbed.setFooter(
-      "Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
-      "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
-    );
-    channel.send({ embeds: [baseEmbed] });
-    rss_feed[0] = newRssFeed[0];
-    rss_feed[1] = newRssFeed[1];
-    console.log("New RSS Feed fetched! " + rss_feed[0] + " " + rss_feed[1]);
-  }
-  if (rss_feed[0] == "") {
+  let sendArray = [];
+  if (rss_feed == JSON) {
     console.log("RSS Feed is empty, fetching...");
-    rss_feed[0] = newRssFeed[0];
-    rss_feed[1] = newRssFeed[1];
-    console.log("RSS Feed fetched! " + rss_feed[0] + " " + rss_feed[1]);
+    console.log("RSS Feed fetched!");
+    rss_feed = newRssFeed;
+  } else if (newRssFeed != rss_feed) {
+    console.log(newRssFeed);
+    console.log(rss_feed);
+    for (let i = 0; i < newRssFeed.length; i++) {
+      for (let j = 0; j < rss_feed.length; j++) {
+        if (
+          newRssFeed[i].title == rss_feed[j].title &&
+          newRssFeed[i].link == rss_feed[j].link
+        ) {
+          break;
+        }
+      }
+      sendArray.push(newRssFeed[i]);
+    }
+    for (let x = 0; x < sendArray.length; x++) {
+      baseEmbed = baseEmbedGenerator();
+      baseEmbed.setTitle(sendArray[x].title);
+      baseEmbed.setDescription(sendArray[x].link);
+      baseEmbed.setFooter(
+        "Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
+        "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
+      );
+      channel.send({ embeds: [baseEmbed] });
+      console.log("New RSS Feed fetched! " + sendArray[x].title);
+    }
   }
-}, 10000);
+}, 100);
