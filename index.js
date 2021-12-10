@@ -54,7 +54,7 @@ client.on("messageCreate", async (message) => {
 		messaggio = message.content.split("\n");
 		baseEmbed = baseEmbedGenerator();
 		baseEmbed.setTitle(messaggio[1]);
-		baseEmbed.setDescription(messaggio[2]);
+		baseEmbed.setDescription(messaggio.slice(2).join("\n"));
 		await channel.send({ embeds: [baseEmbed] });
 	}
 });
