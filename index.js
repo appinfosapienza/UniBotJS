@@ -114,6 +114,7 @@ var intervalId = setInterval(async function () {
 	catch (error) 
 	{
 		console.log("Error in the RSS Feed control " + getDate());
+		console.log(error)
 	}
 }, 10000);
 
