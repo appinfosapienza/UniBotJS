@@ -17,7 +17,9 @@ module.exports.rss_parser = (newRssFeed, rss_feed) => {
 		if (count == rss_feed.items.length) 
 		{
 			data = d.getDate() + " " + d.toLocaleString('en-GB', { month: 'short' }) + " " + d.getFullYear();
-			console.log("Date Control")
+			console.log("newRssFeed.items.length: " + newRssFeed.items.length);
+			console.log("rss_feed.items.length: " + rss_feed.items.length);
+			console.log("Date Control " + activationDate);
 			console.log("Today: " + data)
 			console.log("Day declared on RSS Feed: " + newRssFeed.items[i].pubDate.split(" ").slice(1, 4).join(" "))
 			if (data == newRssFeed.items[i].pubDate.split(" ").slice(1, 4).join(" ")) {
