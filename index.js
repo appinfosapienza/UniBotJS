@@ -46,7 +46,7 @@ client.on("messageCreate", async (message) => {
 	// Utilize this command if you need to restart the bot
 	if (message.content === "!restartBot" && message.channel == adminChannel) {
 		await message.reply("Restarting...");
-		console.log("Restarting bot...");
+		console.log("Restarting bot... " + getDate());
 		client.destroy();
 		process.exit(0);
 	// Utilize this command if you need to send a news outside the RSS feed
@@ -88,13 +88,13 @@ var intervalId = setInterval(async function () {
 		let sendArray = [];
 		if (rss_feed == JSON) 
 		{
-			console.log("RSS Feed is empty, fetching...");
-			console.log("RSS Feed fetched!");
+			console.log("RSS Feed is empty, fetching... " + getDate());
+			console.log("RSS Feed fetched! " + getDate());
 			rss_feed = newRssFeed;
 		}
 		else if (JSON.stringify(newRssFeed.items) != JSON.stringify(rss_feed.items))
 		{
-			console.log("RSS Feed has changed, fetching...");
+			console.log("RSS Feed has changed, fetching..." + getDate());
 			let sendArray = rss_parser(newRssFeed, rss_feed);
 			sendArray.reverse();
 			for (let x = 0; x < sendArray.length; x++) 
@@ -113,6 +113,13 @@ var intervalId = setInterval(async function () {
 	} 
 	catch (error) 
 	{
-		console.log("Error in the RSS Feed control");
+		console.log("Error in the RSS Feed control " + getDate());
 	}
-}, 60000);
+}, 10000);
+
+function getDate()
+{
+	let d = new Date();
+	return d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear() 
+	+ " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()	
+}
