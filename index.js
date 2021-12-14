@@ -10,7 +10,7 @@ with the following format:
   "newsInoltrerChannel": "your_news_inoltrer_channel_id_here",
 }
 */
-const {token, adminChannel, newsChannel, newsInoltrerChannel} = require("./config.json");
+const { token, adminChannel, newsChannel, newsInoltrerChannel } = require("./config.json");
 const { baseEmbedGenerator } = require("./tools/baseEmbedFactory.js");
 const { rss_fetcher } = require("./tools/rss_fetcher.js");
 const { rss_parser } = require("./tools/rss_parser.js");
@@ -37,7 +37,8 @@ for (const file of commandFiles) {
 
 // When the client is ready, run this code (only once)
 client.once("ready", async () => {
-	console.log(`Logged in as ${client.user.tag}!`);
+	let welcome = getDate() + ` Logged in as ${client.user.tag}!` + "\n";
+	saveDebug(welcome);
 	const channelID = newsChannel;
 	channel = await client.channels.fetch(channelID);
 });
@@ -49,7 +50,7 @@ client.on("messageCreate", async (message) => {
 		console.log("Restarting bot... " + getDate());
 		client.destroy();
 		process.exit(0);
-	// Utilize this command if you need to send a news outside the RSS feed
+		// Utilize this command if you need to send a news outside the RSS feed
 	} else if (message.channel == newsInoltrerChannel && message.content.startsWith("!news")) {
 		messaggio = message.content.split("\n");
 		baseEmbed = baseEmbedGenerator();
@@ -82,23 +83,20 @@ client.login(token);
 // RSS Feed Fetcher
 var intervalId = setInterval(async function () {
 	let newRssFeed = JSON;
-	try 
-	{
+	let backupFeed = rss_feed;
+	try {
 		newRssFeed = await rss_fetcher();
 		let sendArray = [];
-		if (rss_feed == JSON) 
-		{
-			console.log("RSS Feed is empty, fetching... " + getDate());
-			console.log("RSS Feed fetched! " + getDate());
+		if (rss_feed == JSON) {
+			let content = getDate() + " RSS Feed is empty, fetching... " + "\n";
+			saveDebug(content);
 			rss_feed = newRssFeed;
 		}
-		else if (JSON.stringify(newRssFeed.items) != JSON.stringify(rss_feed.items))
-		{
-			console.log("RSS Feed has changed, fetching..." + getDate());
+		else if (JSON.stringify(newRssFeed.items) != JSON.stringify(rss_feed.items)) {
+			saveDebug(getDate() + " RSS Feed has changed, fetching... " + "\n");
 			let sendArray = rss_parser(newRssFeed, rss_feed);
 			sendArray.reverse();
-			for (let x = 0; x < sendArray.length; x++) 
-			{
+			for (let x = 0; x < sendArray.length; x++) {
 				baseEmbed = baseEmbedGenerator();
 				baseEmbed.setTitle(sendArray[x].title);
 				baseEmbed.setDescription(sendArray[x].link);
@@ -110,17 +108,21 @@ var intervalId = setInterval(async function () {
 			}
 			rss_feed = newRssFeed;
 		}
-	} 
-	catch (error) 
-	{
-		console.log("Error in the RSS Feed control " + getDate());
-		console.log(error)
+	}
+	catch (error) {
+		content = getDate() + "Error while fetching RSS feed! " + "\n" + error + "\n";
+		saveDebug(content);
+		rss_feed = backupFeed;
 	}
 }, 10000);
 
-function getDate()
-{
+function getDate() {
 	let d = new Date();
-	return d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear() 
-	+ " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()	
+	return "[" + d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()
+		+ " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "]";
+}
+
+function saveDebug(content) {
+	fs.writeFile('debug.txt', content, { flag: 'a+' }, err => { });
+	console.log(content);
 }
