@@ -1,21 +1,10 @@
-// Require the necessary discord.js classes
-const fs = require("fs"); // fs is Node's native file system module
-const { Client, Collection, Intents } = require("discord.js");
-/*Create a config.json file in the same directory as the bot
-with the following format:
-{
-  "token": "your_token_here",
-  "adminChannel": "your_admin_channel_id_here",
-  "newsChannel": "your_news_channel_id_here",
-  "newsInoltrerChannel": "your_news_inoltrer_channel_id_here",
-}
-*/
 const { token, adminChannel, newsChannel, newsInoltrerChannel } = require("./config.json");
+const { Client, Collection, Intents } = require("discord.js"); // Require the necessary discord.js classes
+const fs = require("fs");
 const { baseEmbedGenerator } = require("./tools/baseEmbedFactory.js");
-const { rss_fetcher } = require("./tools/rss_fetcher.js");
-const { rss_parser } = require("./tools/rss_parser.js");
+const { rss_sender } = require("./tools/rss_tools.js");
+const { formattedDate, saveDebug } = require("./tools/miscelaneous.js");
 let channel;
-
 let rss_feed = JSON;
 
 // Create a new client instance
@@ -37,21 +26,21 @@ for (const file of commandFiles) {
 
 // When the client is ready, run this code (only once)
 client.once("ready", async () => {
-	let welcome = getDate() + ` Logged in as ${client.user.tag}!` + "\n";
+	let welcome = formattedDate() + ` Logged in as ${client.user.tag}!` + "\n";
 	saveDebug(welcome);
-	const channelID = newsChannel;
-	channel = await client.channels.fetch(channelID);
+	channel = await client.channels.fetch(newsChannel);
 });
 
 client.on("messageCreate", async (message) => {
 	// Utilize this command if you need to restart the bot
 	if (message.content === "!restartBot" && message.channel == adminChannel) {
 		await message.reply("Restarting...");
-		console.log("Restarting bot... " + getDate());
+		saveDebug(formattedDate() + " Restarting..." + "\n");
 		client.destroy();
 		process.exit(0);
-		// Utilize this command if you need to send a news outside the RSS feed
-	} else if (message.channel == newsInoltrerChannel && message.content.startsWith("!news")) {
+	}
+	// Utilize this command if you need to send a news outside the RSS feed
+	else if (message.channel == newsInoltrerChannel && message.content.startsWith("!news")) {
 		messaggio = message.content.split("\n");
 		baseEmbed = baseEmbedGenerator();
 		baseEmbed.setTitle(messaggio[1]);
@@ -80,49 +69,7 @@ client.on("interactionCreate", async (interaction) => {
 // Login to Discord with your client's token
 client.login(token);
 
-// RSS Feed Fetcher
+// RSS Feed Parser
 var intervalId = setInterval(async function () {
-	let newRssFeed = JSON;
-	let backupFeed = rss_feed;
-	try {
-		newRssFeed = await rss_fetcher();
-		let sendArray = [];
-		if (rss_feed == JSON) {
-			let content = getDate() + " RSS Feed is empty, fetching... " + "\n";
-			saveDebug(content);
-			rss_feed = newRssFeed;
-		}
-		else if (JSON.stringify(newRssFeed.items) != JSON.stringify(rss_feed.items)) {
-			saveDebug(getDate() + " RSS Feed has changed, fetching... " + "\n");
-			let sendArray = rss_parser(newRssFeed, rss_feed);
-			sendArray.reverse();
-			for (let x = 0; x < sendArray.length; x++) {
-				baseEmbed = baseEmbedGenerator();
-				baseEmbed.setTitle(sendArray[x].title);
-				baseEmbed.setDescription(sendArray[x].link);
-				baseEmbed.setFooter(
-					"Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
-					"https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
-				);
-				channel.send({ embeds: [baseEmbed] });
-			}
-			rss_feed = newRssFeed;
-		}
-	}
-	catch (error) {
-		content = getDate() + "Error while fetching RSS feed! " + "\n" + error + "\n";
-		saveDebug(content);
-		rss_feed = backupFeed;
-	}
+	rss_feed = await rss_sender(rss_feed, channel);
 }, 10000);
-
-function getDate() {
-	let d = new Date();
-	return "[" + d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()
-		+ " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "]";
-}
-
-function saveDebug(content) {
-	fs.writeFile('debug.txt', content, { flag: 'a+' }, err => { });
-	console.log(content);
-}
