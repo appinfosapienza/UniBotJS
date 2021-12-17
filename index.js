@@ -72,4 +72,4 @@ client.login(token);
 // RSS Feed Parser
 var intervalId = setInterval(async function () {
 	rss_feed = await rss_sender(rss_feed, channel);
-}, 10000);
+}, 90000);

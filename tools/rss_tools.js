@@ -3,6 +3,7 @@ let Parser = require("rss-parser");
 const { RSSLink } = require("../config.json");
 const { formattedDate, saveDebug } = require("./miscelaneous.js");
 const { baseEmbedGenerator } = require("./baseEmbedFactory.js");
+const { send } = require("process");
 let parser = new Parser();
 //const rssFeed = "https://lorem-rss.herokuapp.com/feed?unit=second&interval=30";
 //const rssFeed = "https://www.gasparini.cloud/sapienza-feed";
@@ -26,16 +27,29 @@ module.exports.rss_sender = async (rss_feed, channel) => {
 			let sendArray = rss_parser(newRssFeed, rss_feed);
 			sendArray.reverse();
 			for (let x = 0; x < sendArray.length; x++) {
-				baseEmbed = baseEmbedGenerator();
-				baseEmbed.setTitle(sendArray[x].title);
-				baseEmbed.setDescription(sendArray[x].link);
-				baseEmbed.setFooter(
-					"Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
-					"https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
-				);
-				channel.send({ embeds: [baseEmbed] });
+				let sendStatus = true;
+				for (let y = 0; y < sendArray.length; y++) {
+					if (y != x) {
+						if (sendArray[x].title == sendArray[y].title) {
+							sendStatus = false;
+						}
+					}
+				}
+				if (sendStatus) {
+					baseEmbed = baseEmbedGenerator();
+					baseEmbed.setTitle(sendArray[x].title);
+					baseEmbed.setDescription(sendArray[x].link);
+					baseEmbed.setFooter(
+						"Using RSS feed from https://www.gasparini.cloud/sapienza-feed",
+						"https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png"
+					);
+					channel.send({ embeds: [baseEmbed] });
+				}
+				else {
+					saveDebug(formattedDate() + " Blocked a news" + "\n");
+				}
+				rss_feed = newRssFeed;
 			}
-			rss_feed = newRssFeed;
 		}
 	}
 	catch (error) {
