@@ -28,7 +28,7 @@ module.exports.rss_sender = async (rss_feed, channel) => {
 			sendArray.reverse();
 			for (let x = 0; x < sendArray.length; x++) {
 				let sendStatus = true;
-				for (let y = 0; y < sendArray.length; y++) {
+				for (let y = x; y < sendArray.length; y++) {
 					if (y != x) {
 						if (sendArray[x].title == sendArray[y].title) {
 							sendStatus = false;
