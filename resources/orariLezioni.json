@@ -138,40 +138,46 @@
       "lezioneInCorso": "Sei fuori orario, le lezioni non ci sono a quest'ora!",
       "possibilePreLezione": "Sei fuori orario, le lezioni non ci sono a quest'ora!"
     },
-    "12": {
+    "9": {
       "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Algebra, Prof. Papi",
+      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
       "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
     },
-    "13": {
-      "nomeLezione": "Algebra, Prof. Papi",
-      "nomeProssimaLezione": "Algebra, Prof. Papi",
-      "lezioneInCorso": "Link Zoom: ID 831 4117 9216",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
+     "10": {
+      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
+      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
     },
-    "14": {
-      "nomeLezione": "Algebra, Prof. Papi",
-      "nomeProssimaLezione": "Algebra, Prof. Papi",
-      "lezioneInCorso": "Link Zoom: 831 4117 9216 ",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
+    "11": {
+      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
+      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+    },
+    "12": {
+      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
+      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
     },
     "15": {
-      "nomeLezione": "Algebra, Prof. Papi",
+      "nomeLezione": "Non c'è lezione",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "Link Zoom: ID 831 4117 9216",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/85144188982?pwd=d2ppdVU1dHArTEJYZjVZVTBLbXJVUT09"
+      "lezioneInCorso": "Il link per la lezione sarà disponibile tra poco! Algebra non ha fatto lezione",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/81187263915"
     },
     "16": {
       "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/85144188982?pwd=d2ppdVU1dHArTEJYZjVZVTBLbXJVUT09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/85144188982?pwd=d2ppdVU1dHArTEJYZjVZVTBLbXJVUT09"
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/81187263915",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/81187263915"
     },
     "17": {
       "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/85144188982?pwd=d2ppdVU1dHArTEJYZjVZVTBLbXJVUT09",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/81187263915",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
