@@ -20,13 +20,27 @@ module.exports = {
     const rawRollInput = interaction.options.getString("input");
     const timesToRoll = parseInt(rawRollInput.split("d")[0]);
     const dice = parseInt(rawRollInput.split("d")[1]);
+    
+    if(timesToRoll > 10000000){
+        baseEmbed = baseEmbedGenerator();
+        baseEmbed.setTitle("Roll");
+        baseEmbed.setDescription("Valore dei lanci troppo alto!");
+        await interaction.followUp({ embeds: [baseEmbed] });
+        return "";
+    }
+    
     let eachRollString = "";
-    let sumOfRolls = 0;
+    let sumOfRolls = 0;   
     for (let i = 0; i < timesToRoll; i++) {
       let rolledNumber = Math.floor(Math.random() * dice+1);
       sumOfRolls += rolledNumber;
       eachRollString += rolledNumber + " ";
     }
+    
+    if(timesToRoll > 999){
+      eachRollString = "";
+    }
+    
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Roll");
     baseEmbed.setDescription(
