@@ -1,5 +1,7 @@
+let path = require("path");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
+const fs = require("fs");
 
 module.exports = {
     data: new SlashCommandBuilder()

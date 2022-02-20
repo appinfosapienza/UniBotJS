@@ -6,17 +6,22 @@ module.exports = {
     .setName("lezione")
     .setDescription("Risponde con il link della lezione corrente!"),
   async execute(interaction) {
-    /*
+
     const rawJsonOrari = require("../resources/orariLezioni.json");
     const dayObject = new Date();
     const day = correctDay(rawJsonOrari[dayObject.getDay()], rawJsonOrari);
     const orario = correctOrario(day[dayObject.getHours()], day);
     const minuto = correctMinuto(dayObject.getMinutes());
     const minutoNomeLezione = correctMinutoPerNomeLezione(dayObject.getMinutes());
-    */
     baseEmbed = baseEmbedGenerator();
+    console.log(orario[minutoNomeLezione])
+    console.log(orario[minuto])
+    baseEmbed.setTitle(orario[minutoNomeLezione]);
+    baseEmbed.setDescription(orario[minuto]);
+    /*
     baseEmbed.setTitle("I corsi sono terminati");
     baseEmbed.setDescription("Buona fortuna con gli esami!");
+    */
     await interaction.reply({ embeds: [baseEmbed] });
   },
 };

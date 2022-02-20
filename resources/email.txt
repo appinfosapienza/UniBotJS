@@ -1,1 +1,8 @@
-lorem ipsum
+**Monti Angelo**: 
+- monti@di.uniroma1.it
+**Casalicchio Emiliano**: 
+- casalicchio@di.uniroma1.it
+**Gaia Maselli**: 
+- maselli@di.uniroma1.it
+**Pirrò Giuseppe**: 
+- pirro@di.uniroma1.it

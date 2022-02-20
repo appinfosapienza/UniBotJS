@@ -6,40 +6,34 @@
       "lezioneInCorso": "Sei fuori orario, le lezioni non ci sono a quest'ora!",
       "possibilePreLezione": "Sei fuori orario, le lezioni non ci sono a quest'ora!"
     },
-    "12": {
-      "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655"
-    },
     "13": {
-      "nomeLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "nomeProssimaLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655"     
+      "nomeLezione": "Non c'è lezione",
+      "nomeProssimaLezione": "Reti di Elaboratori, Prof. Maselli",
+      "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "14": {
-      "nomeLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "nomeProssimaLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso":  "https://uniroma1.zoom.us/j/3191383655",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655#success"
+      "nomeLezione": "Reti di Elaboratori, Prof. Maselli",
+      "nomeProssimaLezione": "Reti di Elaboratori, Prof. Maselli",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "15": {
-      "nomeLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "nomeProssimaLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655#success",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655#success"
+      "nomeLezione": "Reti di Elaboratori, Prof. Maselli",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "16": {
-      "nomeLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "nomeProssimaLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655#success",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655#success"
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "17": {
-      "nomeLezione": "Calcolo delle Probabilità, Prof. De Santis/Prof. Faggionato",
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655#success",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
@@ -50,40 +44,40 @@
       "lezioneInCorso": "Sei fuori orario, le lezioni non ci sono a quest'ora!",
       "possibilePreLezione": "Sei fuori orario, le lezioni non ci sono a quest'ora!"
     },
-    "12": {
-      "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Algebra, Prof. Papi",
-      "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
-    },
     "13": {
-      "nomeLezione": "Algebra, Prof. Papi",
-      "nomeProssimaLezione": "Algebra, Prof. Papi",
-      "lezioneInCorso": "Link Zoom: ID 831 4117 9216",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
+      "nomeLezione": "Non c'è lezione",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "14": {
-      "nomeLezione": "Algebra, Prof. Papi",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "Link Zoom: ID 831 4117 9216",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "15": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "nomeProssimaLezione": "Basi di Dati II, Prof. Pirrò",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "16": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+      "nomeLezione": "Basi di Dati II, Prof. Pirrò",
+      "nomeProssimaLezione": "Basi di Dati II, Prof. Pirrò",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "17": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
+      "nomeLezione": "Basi di Dati II, Prof. Pirrò",
+      "nomeProssimaLezione": "Basi di Dati II, Prof. Pirrò",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
+    },
+    "18": {
+      "nomeLezione": "Basi di Dati II, Prof. Pirrò",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
@@ -94,40 +88,40 @@
       "lezioneInCorso": "Sei fuori orario, le lezioni non ci sono a quest'ora!",
       "possibilePreLezione": "Sei fuori orario, le lezioni non ci sono a quest'ora!"
     },
-    "12": {
-      "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655"
-    },
     "13": {
-      "nomeLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "nomeProssimaLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655"
+      "nomeLezione": "Non c'è lezione",
+      "nomeProssimaLezione": "Basi di Dati II, Prof. Pirrò",
+      "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "14": {
-      "nomeLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "nomeProssimaLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655"
+      "nomeLezione": "Basi di Dati II, Prof. Pirrò",
+      "nomeProssimaLezione": "Basi di Dati II, Prof. Pirrò",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "15": {
-      "nomeLezione": "Sistemi Operativi I, Prof. Ottolino",
-      "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655#success"
+      "nomeLezione": "Basi di Dati II, Prof. Pirrò",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
     },
     "16": {
-      "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655#success",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/3191383655#success"
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
     },
     "17": {
-      "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
+    },
+    "18": {
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/3191383655#success",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
@@ -138,46 +132,40 @@
       "lezioneInCorso": "Sei fuori orario, le lezioni non ci sono a quest'ora!",
       "possibilePreLezione": "Sei fuori orario, le lezioni non ci sono a quest'ora!"
     },
-    "9": {
+    "13": {
       "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
+      "nomeProssimaLezione": "Reti di Elaboratori, Prof. Maselli",
       "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
-     "10": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
-    },
-    "11": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
-    },
-    "12": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+    "14": {
+      "nomeLezione": "Reti di Elaboratori, Prof. Maselli",
+      "nomeProssimaLezione": "Reti di Elaboratori, Prof. Maselli",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "15": {
-      "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "Il link per la lezione sarà disponibile tra poco! Algebra non ha fatto lezione",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/81187263915"
+      "nomeLezione": "Reti di Elaboratori, Prof. Maselli",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "16": {
-      "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "nomeProssimaLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/81187263915",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/81187263915"
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "17": {
-      "nomeLezione": "Calcolo delle Probabilià, Prof. De Santis/Prof. Faggionato",
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "nomeProssimaLezione": "Progettazione di Algoritmi, Prof. Monti",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
+    },
+    "18": {
+      "nomeLezione": "Progettazione di Algoritmi, Prof. Monti",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/81187263915",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
@@ -188,34 +176,46 @@
       "lezioneInCorso": "Sei fuori orario, le lezioni non ci sono a quest'ora!",
       "possibilePreLezione": "Sei fuori orario, le lezioni non ci sono a quest'ora!"
     },
-    "12": {
+    "9": {
       "nomeLezione": "Non c'è lezione",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
       "lezioneInCorso": "Le lezioni cominceranno tra poco, ma ora non ci sono!",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
+    },
+    "10": {
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
+    },
+    "11": {
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
+    },
+    "12": {
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "nomeProssimaLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
+      "possibilePreLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success"
     },
     "13": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Basi di Dati I, Prof. De Marsico",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09"
+      "nomeLezione": "Sistemi Operativi II, Prof. Casalicchio",
+      "nomeProssimaLezione": "Reti di Elaboratori, Prof. Maselli",
+      "lezioneInCorso": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09#success",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "14": {
-      "nomeLezione": "Basi di Dati I, Prof. De Marsico",
-      "nomeProssimaLezione": "Algebra prof. Papi",
-      "lezioneInCorso": "https://uniroma1.zoom.us/j/86240758283?pwd=ajZTNis4dCtXVEM0UmkydzhYcGpHZz09",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
+      "nomeLezione": "Reti di Elaboratori, Prof. Maselli",
+      "nomeProssimaLezione": "Reti di Elaboratori, Prof. Maselli",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
+      "possibilePreLezione": "https://meet.google.com/sfi-siup-ubd"
     },
     "15": {
-      "nomeLezione": "Algebra prof. Papi",
-      "nomeProssimaLezione": "Algebra prof. Papi",
-      "lezioneInCorso": "Link Zoom: ID 831 4117 9216 ",
-      "possibilePreLezione": "Link Zoom: ID 831 4117 9216"
-    },
-    "16": {
-      "nomeLezione": "Algebra prof. Papi",
+      "nomeLezione": "Reti di Elaboratori, Prof. Maselli",
       "nomeProssimaLezione": "Nessuna lezione dopo!",
-      "lezioneInCorso": "Link Zoom: 831 4117 9216",
+      "lezioneInCorso": "https://meet.google.com/sfi-siup-ubd",
       "possibilePreLezione": "La lezione sta per finire!"
     }
   },
