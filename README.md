@@ -12,3 +12,10 @@ When first starting the server, make sure you have created a config.json file in
   "newsInoltrerChannel": "your_news_inoltrer_channel_id_here",
 }
 ```
+
+## Requirements
+The following modules are required to be installed:
+- discord.js
+- rss-parser
+- axios
+- jsdom
