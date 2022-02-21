@@ -1,0 +1,54 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+            "nome": {
+                "type": "string"
+            },
+            "alias": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "email": {
+                "type": "string"
+            },
+            "prof": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "canale": {
+                "type": "number"
+            },
+            "urlLezione": {
+                "type": "string"
+            },
+            "urlRisorse": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "semestre": {
+                "type": "number"
+            },
+            "quando": {
+                "type": "array",
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ricevimento": {
+                "type": "string"
+            }
+        }
+    }
+}
