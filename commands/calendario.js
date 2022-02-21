@@ -8,7 +8,7 @@ module.exports = {
   async execute(interaction) {
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Calendario");
-    baseEmbed.setImage("https://i.imgur.com/MNOjYxr.jpg");
+    baseEmbed.setImage("https://i.imgur.com/3OgPj8e.jpg");
     await interaction.reply({ embeds: [baseEmbed] });
   },
 };
