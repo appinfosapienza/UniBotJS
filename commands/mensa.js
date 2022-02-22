@@ -37,7 +37,6 @@ async function getHTML() {
     let menu = html.replace(/<h5>/g, "").replace(/<\/h5>/g, "\n").replace(/<ul>/g, "")
       .replace(/<\/ul>/g, "\n").replace(/<li>/g, "-").replace(/<\/li>/g, "\n").replace(/&nbsp;/g, "");
     let d = new Date();
-    let date = d.getDate() + "/" + (d.getMonth() + 1);
     baseEmbed.setTitle("Menu della mensa De Lollis di oggi, \n" +
       giveDayOfWeek() + " " + d.getDate() + " " + giveMonth());
     baseEmbed.setDescription(menu);
