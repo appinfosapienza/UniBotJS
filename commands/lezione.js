@@ -22,7 +22,8 @@ module.exports = {
 
     baseEmbed = baseEmbedGenerator();
     title = ""
-    data = "Comando lanciato alle **" + hh + ":" + mm + "**\n\n"
+    data = ""
+    // data = "Comando lanciato alle **" + hh + ":" + mm + "**\n\n"
 
     for (obj in jsonData) {
       jsonObj = jsonData[obj]
@@ -37,7 +38,7 @@ module.exports = {
 
       // next mode: check what's up next
       if (nextLecture === "" && onTime(jsonObj, hh, doWShort, "next")) {
-        nextLecture += "**Prossima ora: **" + jsonObj["nome"] + " - " + jsonObj["urlLezione"] + "\n"
+        nextLecture += "**Prossima lezione: **" + jsonObj["nome"] + " - " + jsonObj["urlLezione"] + "\n"
       }
     }
 
@@ -89,7 +90,7 @@ function onTime(jsonObj, currentHH, doWShort, mode) {
       start = parseInt(jsonObj['quando'][index][1])
       end = parseInt(jsonObj['quando'][index][2])
 
-      if (mode === "current" && shortDay.toUpperCase() === doWShort && currentHH >= start && currentHH <= end) {
+      if (mode === "current" && shortDay.toUpperCase() === doWShort && currentHH >= start && currentHH < end) {
         return true
       }
 
