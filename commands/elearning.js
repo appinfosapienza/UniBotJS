@@ -8,17 +8,26 @@ module.exports = {
     .setName("elearning")
     .setDescription("Mostra i link agli elearning o alle dispense dei prof"),
   async execute(interaction) {
-    let data = "";
-    try {
-      data = fs.readFileSync(
-        path.join(__dirname, "../resources/elearning.txt"),
-        "utf8"
-      );
-    } catch (err) {
-      console.error(err);
-    }
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Link elearning e dispense");
+
+    data = ""
+    for (obj in jsonData) {
+      jsonObj = jsonData[obj]
+      data += "**" + jsonObj['nome'] + "**" + "\n"
+
+      // check if no link has been specified
+      if (jsonObj['urlRisorse'] === []) {
+        data += "Nessun link disponibile :("
+      }
+      else {
+        for (index in jsonObj['urlRisorse'])
+          data += "- " + jsonObj['urlRisorse'][index] + "\n"
+      }
+
+      data += "\n"
+    }
+
     baseEmbed.setDescription(data);
     await interaction.reply({ embeds: [baseEmbed] });
   },
