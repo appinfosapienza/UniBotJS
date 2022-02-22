@@ -30,7 +30,12 @@ for (const file of commandFiles) {
 client.once("ready", async () => {
 	let welcome = formattedDate() + ` Logged in as ${client.user.tag}!` + "\n";
 	saveDebug(welcome);
-	channel = await client.channels.fetch(newsChannel);
+	if (typeof newsChannel !== "undefined" && newsChannel !== "") {
+		channel = await client.channels.fetch(newsChannel);
+	}
+	else {
+		console.log("[WARN] Undefined news channel. Check config.json")
+	}
 });
 
 client.on("messageCreate", async (message) => {
@@ -72,6 +77,8 @@ client.on("interactionCreate", async (interaction) => {
 client.login(token);
 
 // RSS Feed Parser
-var intervalId = setInterval(async function () {
-	rss_feed = await rss_sender(rss_feed, channel);
-}, 90000);
+if (typeof newsChannel !== "undefined" && newsChannel !== "") {
+	var intervalId = setInterval(async function () {
+		rss_feed = await rss_sender(rss_feed, channel);
+	}, 90000);
+}
