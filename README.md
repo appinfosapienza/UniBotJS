@@ -3,19 +3,29 @@ New discord bot based on Javascript and node.js for "La Sapienza Computer Scienc
 
 This bot can be easily adapted to other university servers.
 
-When first starting the server, make sure you have created a config.json file in the root directory of the bot with the following structure:
+## Getting started
+This bot requires [npm](https://www.npmjs.com/).
+
+Clone this repo, then from terminal:
+```
+npm install
+```
+
+Make sure to create a config.json file in the root directory of the bot with the following structure:
 ```
 {
   "token": "your_token_here",
+  "clientId":"your_client_id"
   "adminChannel": "your_admin_channel_id_here",
   "newsChannel": "your_news_channel_id_here",
-  "newsInoltrerChannel": "your_news_inoltrer_channel_id_here",
+  "newsInoltrerChannel": "your_news_inoltrer_channel_id_here"
 }
 ```
 
-## Requirements
+## NPM Modules
 The following modules are required to be installed:
 - discord.js
 - rss-parser
 - axios
 - jsdom
+
