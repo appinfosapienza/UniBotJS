@@ -4,13 +4,13 @@ const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("rinuncia")
-    .setDescription("Non credo ci sia bisogno di descrizione"),
+    .setDescription("Fa il caffé un giorno sì e un giorno no. Attenzione: oggi è il giorno NO."),
   async execute(interaction) {
     console.log(
       interaction.user.username +
-        "#" +
-        interaction.user.discriminator +
-        " ha rinunciato agli studi"
+      "#" +
+      interaction.user.discriminator +
+      " ha rinunciato agli studi"
     );
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Rinuncia agli studi");
