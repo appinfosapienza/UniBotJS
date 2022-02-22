@@ -28,6 +28,9 @@
             "urlLezione": {
                 "type": "string"
             },
+            "urlDocente": {
+                "type": "string"
+            },
             "urlRisorse": {
                 "type": "array",
                 "items": {
