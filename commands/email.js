@@ -19,7 +19,6 @@ module.exports = {
     async execute(interaction) {
         baseEmbed = baseEmbedGenerator();
 
-        // taking data from json
         str = ""
         for (obj in jsonData) {
             jsonObj = jsonData[obj]
