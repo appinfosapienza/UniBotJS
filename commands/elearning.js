@@ -17,7 +17,7 @@ module.exports = {
       data += "**" + jsonObj['nome'] + "**" + "\n"
 
       // check if no link has been specified
-      if (jsonObj['urlRisorse'] === []) {
+      if (jsonObj['urlRisorse'].length == 0) {
         data += "Nessun link disponibile :("
       }
       else {
