@@ -1,3 +1,5 @@
+// TODO: given a course, return prof + meeting link / directions
+// TODO: given a prof, return course name + meeting link / directions 
 let path = require("path");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
@@ -9,17 +11,16 @@ module.exports = {
     .setDescription("Mostra i link dei ricevimenti dei prof"),
   async execute(interaction) {
     let data = "";
-    try {
-      data = fs.readFileSync(
-        path.join(__dirname, "../resources/ricevimenti.txt"),
-        "utf8"
-      );
-    } catch (err) {
-      console.error(err);
+
+    data = ""
+    for (obj in jsonData) {
+      jsonObj = jsonData[obj]
+      data += "**" + jsonObj['nome'] + "** - **" + jsonObj['prof'][0] + "**" + "\n" + "- " + jsonObj["ricevimento"].toString() + "\n"
     }
+
     baseEmbed = baseEmbedGenerator();
     baseEmbed.setTitle("Link ricevimenti dei professori");
     baseEmbed.setDescription(data);
     await interaction.reply({ embeds: [baseEmbed] });
-	}   
+  }
 }
