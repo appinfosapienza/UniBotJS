@@ -14,7 +14,7 @@ module.exports = {
                 .setDescription(
                     "Nome del corso (ex. SO2)"
                 )
-                .setRequired(true)
+                .setRequired(false)
         ),
     async execute(interaction) {
         baseEmbed = baseEmbedGenerator();
