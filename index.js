@@ -4,6 +4,8 @@ const fs = require("fs");
 const { baseEmbedGenerator } = require("./tools/baseEmbedFactory.js");
 const { rss_sender } = require("./tools/rss_tools.js");
 const { formattedDate, saveDebug } = require("./tools/miscelaneous.js");
+jsonData = require('./resources/lezioni.json');
+
 let channel;
 let rss_feed = JSON;
 
