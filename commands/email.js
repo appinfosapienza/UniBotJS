@@ -6,20 +6,27 @@ const fs = require("fs");
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("email")
-        .setDescription("Mostra le email dei docenti"),
+        .setDescription("Mostra le email dei docenti.")
+
+        .addStringOption((option) =>
+            option
+                .setName("corso")
+                .setDescription(
+                    "Nome del corso (ex. SO2)"
+                )
+                .setRequired(false)
+        ),
     async execute(interaction) {
-        let data = "";
-        try {
-            data = fs.readFileSync(
-                path.join(__dirname, "../resources/email.txt"),
-                "utf8"
-            );
-        } catch (err) {
-            console.error(err);
-        }
         baseEmbed = baseEmbedGenerator();
+
+        str = ""
+        for (obj in jsonData) {
+            jsonObj = jsonData[obj]
+            str += "**" + jsonObj['nome'] + "**" + "\n" + "- " + jsonObj["email"].toString() + "\n"
+        }
+
         baseEmbed.setTitle("Email");
-        baseEmbed.setDescription(data);
+        baseEmbed.setDescription(str);
         await interaction.reply({ embeds: [baseEmbed] });
     },
 };
