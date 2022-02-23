@@ -13,8 +13,51 @@ module.exports.saveDebug = (content) => {
     console.log(content);
 }
 
+//get a number based on the string passed
+module.exports.giveDayFromString = (day) => {
+    let d = new Date()
+
+    if (day == null) {
+        return [this.giveDay(), this.giveDayOfWeek(), d.getDate(), this.giveMonth()]
+    }
+
+    day = day.toLowerCase();
+    var list = ["errore", capitalize(day), "errore", "errore"]
+    switch (day) {
+        case "domenica":
+            list[0] = "pranzo-0";
+            break;
+        case "lunedì":
+        case "lunedi":
+            list[0] = "pranzo-1";
+            break;
+        case "martedì":
+        case "martedi":
+            list[0] = "pranzo-2";
+            break;
+        case "mercoledì":
+        case "mercoledi":
+            list[0] = "pranzo-3";
+            break;
+        case "giovedì":
+        case "giovedi":
+            list[0] = "pranzo-4";
+            break;
+        case "venerdì":
+        case "venerdi":
+            list[0] = "pranzo-5";
+            break;
+        case "sabato":
+            list[0] = "pranzo-6";
+            break;
+    }
+
+    return list;
+}
+
 //get a number based on the day of the week
 module.exports.giveDay = () => {
+
     let d = new Date();
     let day = d.getDay();
     return "pranzo-" + day;
@@ -72,4 +115,8 @@ module.exports.giveDayOfWeek = () => {
         case 6:
             return "Sabato";
     }
+}
+
+function capitalize(str) {
+    return str[0].toUpperCase() + str.slice(1)
 }
