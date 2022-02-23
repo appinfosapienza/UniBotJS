@@ -7,7 +7,6 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName("email")
         .setDescription("Mostra le email dei docenti.")
-
         .addStringOption((option) =>
             option
                 .setName("corso")
