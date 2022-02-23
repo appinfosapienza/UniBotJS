@@ -34,7 +34,7 @@ client.once("ready", async () => {
 		channel = await client.channels.fetch(newsChannel);
 	}
 	else {
-		console.log("[WARN] Undefined news channel. Check config.json")
+		saveDebug("[WARN] Undefined news channel. Check config.json");
 	}
 });
 
