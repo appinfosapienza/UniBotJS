@@ -16,9 +16,10 @@ module.exports = {
 
     var dd = String(today.getDate()).padStart(2, '0');
     var hh = String(today.getHours()).padStart(2, '0');
-    var mm = String(today.getMinutes()).padStart(2, '0');
+    //var mm = String(today.getMinutes()).padStart(2, '0');
     var doW = giveDayOfWeek();
     var doWShort = doW.slice(0, 3).toUpperCase()
+    var hh = 15
 
     baseEmbed = baseEmbedGenerator();
     title = ""
@@ -33,13 +34,15 @@ module.exports = {
 
       // current mode: check what's up right now
       if (rightNow === "" && onTime(jsonObj, hh, doWShort, "current")) {
-        rightNow += "**Adesso: **" + jsonObj["nome"] + " - " + jsonObj["urlLezione"] + "\n"
+        rightNow += "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"] + "\n"
       }
 
+      /*
       // next mode: check what's up next
       if (nextLecture === "" && onTime(jsonObj, hh, doWShort, "next")) {
         nextLecture += "**Prossima lezione: **" + jsonObj["nome"] + " - " + jsonObj["urlLezione"] + "\n"
       }
+      */
     }
 
 
@@ -53,7 +56,7 @@ module.exports = {
     // last lecture of the day
     if (rightNow !== "" && nextLecture === "") {
       title = "Lezione di oggi"
-      data += rightNow + "Non ci sono altre lezioni."
+      data += rightNow //+ "Non ci sono altre lezioni."
     }
 
     // "we're almost there" + next hours
@@ -65,7 +68,7 @@ module.exports = {
     // rn + next hour
     if (rightNow !== "" && nextLecture !== "") {
       title = "Lezione di oggi"
-      data += rightNow + "\n" + nextLecture
+      data += rightNow //+ "\n" + nextLecture
     }
 
     baseEmbed.setTitle(title);
@@ -90,13 +93,15 @@ function onTime(jsonObj, currentHH, doWShort, mode) {
       start = parseInt(jsonObj['quando'][index][1])
       end = parseInt(jsonObj['quando'][index][2])
 
-      if (mode === "current" && shortDay.toUpperCase() === doWShort && currentHH >= start && currentHH < end) {
+      if (mode === "current" && shortDay.toUpperCase() === doWShort && currentHH >= start - 1 && currentHH < end) {
         return true
       }
 
+      /*
       if (mode === "next" && shortDay.toUpperCase() === doWShort && currentHH >= 8 && start > currentHH && currentHH <= 19) {
         return true
       }
+      */
     }
   }
 
