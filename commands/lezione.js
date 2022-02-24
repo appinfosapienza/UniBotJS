@@ -19,7 +19,6 @@ module.exports = {
     //var mm = String(today.getMinutes()).padStart(2, '0');
     var doW = giveDayOfWeek();
     var doWShort = doW.slice(0, 3).toUpperCase()
-    var hh = 15
 
     baseEmbed = baseEmbedGenerator();
     title = ""
