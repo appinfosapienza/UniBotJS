@@ -40,10 +40,9 @@ client.once("ready", async () => {
 		await startupChannel.send("Bot succesfully started!");
 	}
 	else {
-		saveDebus("[WARN] Undefined admin channel. Check config.json");
+		saveDebug("[WARN] Undefined admin channel. Check config.json");
 	}
 	let welcome = formattedDate() + ` Logged in as ${client.user.tag}!` + "\n";
-
 	saveDebug(welcome);
 });
 
