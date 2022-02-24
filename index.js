@@ -8,6 +8,7 @@ jsonData = require('./resources/lezioni.json');
 
 let channel;
 let rss_feed = JSON;
+let startupChannel;
 
 // Create a new client instance
 const client = new Client({
@@ -28,14 +29,22 @@ for (const file of commandFiles) {
 
 // When the client is ready, run this code (only once)
 client.once("ready", async () => {
-	let welcome = formattedDate() + ` Logged in as ${client.user.tag}!` + "\n";
-	saveDebug(welcome);
 	if (typeof newsChannel !== "undefined" && newsChannel !== "") {
 		channel = await client.channels.fetch(newsChannel);
 	}
 	else {
 		saveDebug("[WARN] Undefined news channel. Check config.json");
 	}
+	if (typeof adminChannel !== "undefined" && adminChannel !== "") {
+		startupChannel = await client.channels.fetch(adminChannel);
+		await startupChannel.send("Bot succesfully started!");
+	}
+	else {
+		saveDebus("[WARN] Undefined admin channel. Check config.json");
+	}
+	let welcome = formattedDate() + ` Logged in as ${client.user.tag}!` + "\n";
+
+	saveDebug(welcome);
 });
 
 client.on("messageCreate", async (message) => {
