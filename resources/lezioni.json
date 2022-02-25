@@ -10,6 +10,7 @@
       "Angelo Monti"
     ],
     "canale": 2,
+    "urlInfo": "",
     "urlLezione": "https://meet.google.com/sfi-siup-ubd",
     "urlDocente": "https://corsidilaurea.uniroma1.it/it/users/angelomontiuniroma1it",
     "urlRisorse": [
@@ -46,7 +47,8 @@
       "Gaia Maselli"
     ],
     "canale": 2,
-    "urlLezione": "Lezione solo Online: https://meet.google.com/isa-njnn-ubg",
+    "urlInfo": "Lezione solo Online",
+    "urlLezione": "https://meet.google.com/isa-njnn-ubg",
     "urlDocente": "https://corsidilaurea.uniroma1.it/it/users/gaiamaselliuniroma1it",
     "urlRisorse": [
       "https://twiki.di.uniroma1.it/twiki/view/Reti_elab/MZ20212022",
@@ -83,6 +85,7 @@
       "Giuseppe Pirrò"
     ],
     "canale": 2,
+    "urlInfo": "",
     "urlLezione": "https://uniroma1.zoom.us/j/86737928956?pwd=bWY4bmNGT25WSFJ6Nmd0NDdTKzVWQT09",
     "urlDocente": "https://corsidilaurea.uniroma1.it/it/users/giuseppepirrouniroma1it",
     "urlRisorse": [
@@ -114,6 +117,7 @@
       "Emiliano Casalicchio"
     ],
     "canale": 2,
+    "urlInfo": "",
     "urlLezione": "https://uniroma1.zoom.us/j/9478763232?pwd=U05EdGVZRWJRY25GSjlJRFlRNDBSZz09",
     "urlDocente": "https://corsidilaurea.uniroma1.it/it/users/emilianocasalicchiouniroma1it",
     "urlRisorse": [

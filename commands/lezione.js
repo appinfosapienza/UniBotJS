@@ -16,7 +16,7 @@ module.exports = {
 
     var dd = String(today.getDate()).padStart(2, '0');
     var hh = String(today.getHours()).padStart(2, '0');
-    //var mm = String(today.getMinutes()).padStart(2, '0');
+    hh = 15
     var doW = giveDayOfWeek();
     var doWShort = doW.slice(0, 3).toUpperCase()
 
@@ -33,7 +33,8 @@ module.exports = {
 
       // current mode: check what's up right now
       if (rightNow === "" && onTime(jsonObj, hh, doWShort, "current")) {
-        rightNow += "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"] + "\n"
+        rightNow += "**" + jsonObj["urlInfo"] + "**\n" + "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"] +
+          "\n"
       }
 
       /*
@@ -58,11 +59,13 @@ module.exports = {
       data += rightNow //+ "Non ci sono altre lezioni."
     }
 
+    /*
     // "we're almost there" + next hours
     if (rightNow === "" && nextLecture !== "") {
       title = "Ora non c'è lezione, ma..."
       data += nextLecture
     }
+    */
 
     // rn + next hour
     if (rightNow !== "" && nextLecture !== "") {
