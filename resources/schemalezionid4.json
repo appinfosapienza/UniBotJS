@@ -25,6 +25,9 @@
             "canale": {
                 "type": "number"
             },
+            "urlInfo": {
+                "type": "string"
+            },
             "urlLezione": {
                 "type": "string"
             },
