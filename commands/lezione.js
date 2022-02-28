@@ -15,7 +15,6 @@ module.exports = {
     nextLecture = ""
 
     var hh = String(today.getHours()).padStart(2, '0');
-    hh = 13
     var doW = giveDayOfWeek();
     var doWShort = doW.slice(0, 3).toUpperCase()
 
