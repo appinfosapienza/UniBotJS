@@ -35,7 +35,6 @@ module.exports = {
 
       // current mode: check what's up right now
       if (rightNow === "" && onTime(jsonObj, hh, doWShort, "current")) {
-<<<<<<< HEAD
         if (info != "**Informazioni e Avvisi**\n\n\n") {
           rightNow += info
         }
@@ -44,7 +43,6 @@ module.exports = {
 
 
       /* TO FIX Issue#16
-=======
         info = "**Informazioni e Avvisi**\n" + jsonObj["urlInfo"]
         if (info != "**Informazioni e Avvisi**\n") {
           rightNow += info + "\n\n" + "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"]
@@ -56,7 +54,6 @@ module.exports = {
 
 
       /*
->>>>>>> 8f4f66d752eaf2485e55002b0739ea85358b418c
       // next mode: check what's up next
       if (nextLecture === "" && onTime(jsonObj, hh, doWShort, "next")) {
         nextLecture += "**Prossima lezione: **" + jsonObj["nome"] + " - " + jsonObj["urlLezione"] + "\n"
