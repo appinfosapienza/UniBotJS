@@ -16,6 +16,7 @@ module.exports = {
 
     var dd = String(today.getDate()).padStart(2, '0');
     var hh = String(today.getHours()).padStart(2, '0');
+    hh = 13
     var doW = giveDayOfWeek();
     var doWShort = doW.slice(0, 3).toUpperCase()
 
@@ -32,9 +33,15 @@ module.exports = {
 
       // current mode: check what's up right now
       if (rightNow === "" && onTime(jsonObj, hh, doWShort, "current")) {
-        rightNow += "**" + jsonObj["urlInfo"] + "**\n" + "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"] +
-          "\n"
+        info = "**Informazioni e Avvisi**\n" + jsonObj["urlInfo"]
+        if (info != "**Informazioni e Avvisi**\n") {
+          rightNow += info + "\n\n" + "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"]
+        }
+        else {
+          rightNow += "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"]
+        }
       }
+
 
       /*
       // next mode: check what's up next
@@ -66,11 +73,13 @@ module.exports = {
     }
     */
 
+    /*
     // rn + next hour
     if (rightNow !== "" && nextLecture !== "") {
       title = "Lezione di oggi"
       data += rightNow //+ "\n" + nextLecture
     }
+    */
 
     baseEmbed.setTitle(title);
     baseEmbed.setDescription(data);
