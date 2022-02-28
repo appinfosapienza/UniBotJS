@@ -14,7 +14,6 @@ module.exports = {
     rightNow = ""
     nextLecture = ""
 
-    var dd = String(today.getDate()).padStart(2, '0');
     var hh = String(today.getHours()).padStart(2, '0');
     hh = 13
     var doW = giveDayOfWeek();
@@ -23,16 +22,29 @@ module.exports = {
     baseEmbed = baseEmbedGenerator();
     title = ""
     data = ""
-    // data = "Comando lanciato alle **" + hh + ":" + mm + "**\n\n"
 
     for (obj in jsonData) {
+      //retrieve the right object
       jsonObj = jsonData[obj]
+
+      //retrieve info of the current lecture
+      info = "**Informazioni e Avvisi**\n" + jsonObj["urlInfo"] + "\n\n"
 
       // both strings are checked against null because otherwise it would count every "next lecture".
       // could be useful for future development
 
       // current mode: check what's up right now
       if (rightNow === "" && onTime(jsonObj, hh, doWShort, "current")) {
+<<<<<<< HEAD
+        if (info != "**Informazioni e Avvisi**\n\n\n") {
+          rightNow += info
+        }
+        rightNow += "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"]
+      }
+
+
+      /* TO FIX Issue#16
+=======
         info = "**Informazioni e Avvisi**\n" + jsonObj["urlInfo"]
         if (info != "**Informazioni e Avvisi**\n") {
           rightNow += info + "\n\n" + "**" + jsonObj["nome"] + "**" + " - " + jsonObj["urlLezione"]
@@ -44,6 +56,7 @@ module.exports = {
 
 
       /*
+>>>>>>> 8f4f66d752eaf2485e55002b0739ea85358b418c
       // next mode: check what's up next
       if (nextLecture === "" && onTime(jsonObj, hh, doWShort, "next")) {
         nextLecture += "**Prossima lezione: **" + jsonObj["nome"] + " - " + jsonObj["urlLezione"] + "\n"
@@ -65,13 +78,12 @@ module.exports = {
       data += rightNow //+ "Non ci sono altre lezioni."
     }
 
-    /*
+    /* TO FIX Issue#16
     // "we're almost there" + next hours
     if (rightNow === "" && nextLecture !== "") {
       title = "Ora non c'è lezione, ma..."
       data += nextLecture
     }
-    */
 
     /*
     // rn + next hour
@@ -107,7 +119,7 @@ function onTime(jsonObj, currentHH, doWShort, mode) {
         return true
       }
 
-      /*
+      /*TO FIX Issue#16
       if (mode === "next" && shortDay.toUpperCase() === doWShort && currentHH >= 8 && start > currentHH && currentHH <= 19) {
         return true
       }
