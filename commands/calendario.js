@@ -7,8 +7,18 @@ module.exports = {
     .setDescription("Mostra il calendario delle lezioni"),
   async execute(interaction) {
     baseEmbed = baseEmbedGenerator();
+    let allInfo = "**INFORMAZIONI SULLE LEZIONI**\n\n"
+    for (obj in jsonData) {
+      let info = jsonData[obj]["urlInfo"];
+      if (info != "") {
+        allInfo += "**" + jsonData[obj]["nome"] + "**\n " + info + "\n\n";
+      }
+    }
+    if (allInfo != "**INFORMAZIONI SULLE LEZIONI**\n\n") {
+      baseEmbed.setDescription(allInfo);
+    }
     baseEmbed.setTitle("Calendario");
-    baseEmbed.setImage("https://i.imgur.com/3OgPj8e.jpg");
+    baseEmbed.setImage("https://i.imgur.com/koI335j.jpg");
     await interaction.reply({ embeds: [baseEmbed] });
   },
 };
