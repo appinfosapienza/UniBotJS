@@ -71,7 +71,7 @@ module.exports = {
     // last lecture of the day
     if (rightNow !== "" && nextLecture === "") {
       title = "Lezione di oggi"
-      data += rightNow //+ "Non ci sono altre lezioni."
+      data += rightNow + "Non ci sono altre lezioni."
     }
 
     /* TO FIX Issue#16
