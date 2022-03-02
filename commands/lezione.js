@@ -111,7 +111,7 @@ function onTime(jsonObj, currentHH, doWShort, mode) {
       start = parseInt(jsonObj['quando'][index][1])
       end = parseInt(jsonObj['quando'][index][2])
 
-      if (mode === "current" && shortDay.toUpperCase() === doWShort && currentHH >= start - 1 && currentHH < end) {
+      if (mode === "current" && shortDay.toUpperCase() === doWShort && currentHH >= start - 1 && currentHH < end - 1) {
         return true
       }
 
