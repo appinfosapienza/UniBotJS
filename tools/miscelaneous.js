@@ -3,7 +3,7 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 
 //get the lezioni.json file
 async function getJSON() {
-    const response = await fetch("https://nextcloud.pizzari.me/apps/sharingpath/Lezioni/lezioni.json");
+    const response = await fetch("https://raw.githubusercontent.com/appinfosapienza/timetable-redirect/main/lezioni.json");
     if (!response.ok) // check if response worked (no 404 errors etc...)
         throw new Error(response.statusText);
     const data = response.json(); // get JSON from the response
