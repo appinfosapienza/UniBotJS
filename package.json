@@ -4,6 +4,7 @@
     "axios": "^0.26.0",
     "discord.js": "^13.6.0",
     "jsdom": "^19.0.0",
+    "node-fetch": "^2.6.7",
     "rest": "^2.0.0",
     "rss-parser": "^3.12.0"
   },

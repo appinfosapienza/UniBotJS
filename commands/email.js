@@ -1,6 +1,7 @@
 let path = require("path");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
+const { getJSON } = require("../tools/miscelaneous.js");
 const fs = require("fs");
 
 module.exports = {
@@ -16,6 +17,7 @@ module.exports = {
                 .setRequired(false)
         ),
     async execute(interaction) {
+        jsonData = await (getJSON())
         baseEmbed = baseEmbedGenerator();
         str = "";
         if (interaction.options.getString("corso") != null) {

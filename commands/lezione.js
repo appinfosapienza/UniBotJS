@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
-const { giveDayOfWeek } = require("../tools/miscelaneous.js");
+const { giveDayOfWeek, getJSON } = require("../tools/miscelaneous.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -9,6 +9,7 @@ module.exports = {
   async execute(interaction) {
     const today = new Date();
     let rightNow = ""
+    jsonData = await (getJSON())
 
     let hh = String(today.getHours()).padStart(2, '0');
     let mm = today.getMinutes();

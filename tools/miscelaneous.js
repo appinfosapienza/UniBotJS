@@ -1,4 +1,16 @@
 const fs = require("fs"); // fs is Node's native file system module
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
+
+//get the lezioni.json file
+async function getJSON() {
+    const response = await fetch("https://nextcloud.pizzari.me/apps/sharingpath/Lezioni/lezioni.json");
+    if (!response.ok) // check if response worked (no 404 errors etc...)
+        throw new Error(response.statusText);
+    const data = response.json(); // get JSON from the response
+    return data; // returns a promise, which resolves to this data value
+}
+
+module.exports.getJSON = getJSON;
 
 //get the debug date
 module.exports.formattedDate = () => {
