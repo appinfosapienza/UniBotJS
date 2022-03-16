@@ -1,4 +1,4 @@
-let jsonData = require('../resources/lezioni.json');
+//let jsonData = require('../resources/lezioni.json');
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
 

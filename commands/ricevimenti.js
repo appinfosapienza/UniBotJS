@@ -3,6 +3,7 @@
 let path = require("path");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
+const { getJSON } = require("../tools/miscelaneous.js");
 const fs = require("fs");
 
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
     .setName("ricevimenti")
     .setDescription("Mostra i link dei ricevimenti dei prof"),
   async execute(interaction) {
+    jsonData = await (getJSON())
     let data = "";
 
     data = ""

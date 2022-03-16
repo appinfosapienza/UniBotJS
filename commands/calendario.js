@@ -1,11 +1,13 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { baseEmbedGenerator } = require("../tools/baseEmbedFactory.js");
+const { getJSON } = require("../tools/miscelaneous.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("calendario")
     .setDescription("Mostra il calendario delle lezioni"),
   async execute(interaction) {
+    jsonData = await (getJSON())
     baseEmbed = baseEmbedGenerator();
     let allInfo = "**INFORMAZIONI SULLE LEZIONI**\n\n"
     for (obj in jsonData) {
