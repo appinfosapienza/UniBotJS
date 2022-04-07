@@ -9,13 +9,17 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("mensa")
     .setDescription("Yummy!")
-    .addStringOption((option) =>
-      option
-        .setName("giorno")
-        .setDescription(
-          "Il giorno della setimana (ex. Martedì)"
-        )
+    .addStringOption(option =>
+      option.setName('giorno')
+        .setDescription('Seleziona il giorno della settimana')
         .setRequired(false)
+        .addChoice('Lunedì', 'lunedi')
+        .addChoice('Martedì', 'martedi')
+        .addChoice('Mercoledì', 'mercoledi')
+        .addChoice('Giovedì', 'giovedi')
+        .addChoice('Venerdì', 'venerdi')
+        .addChoice('Sabato', 'sabato')
+        .addChoice('Domenica', 'domenica')
     ),
   async execute(interaction) {
     input = interaction.options.getString("giorno");
@@ -54,8 +58,6 @@ async function getHTML(input) {
   if (day[0] == "errore") {
     baseEmbed.setTitle("Giorno non trovato");
     baseEmbed.setDescription("Non sono riuscito a capire il giorno, controlla che tu lo abbia scritto correttamente");
-    baseEmbed.setFooter("With an helping hand By GitHub Copilot",
-      "https://coursera-university-assets.s3.amazonaws.com/1d/ce9cf75d005c26a645a53ab325a671/Logo-360x360-png-rosso.png");
   }
   else if (day[0] != "pranzo-0") {
     let roba = document.getElementById(day[0]);
