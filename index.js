@@ -87,5 +87,5 @@ client.login(token);
 if (typeof newsChannel !== "undefined" && newsChannel !== "") {
 	var intervalId = setInterval(async function () {
 		rss_feed = await rss_sender(rss_feed, channel);
-	}, 90000);
+	}, 1800000);
 }
