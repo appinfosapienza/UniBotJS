@@ -1,5 +1,8 @@
 # UniBotJS
-New discord bot based on Javascript and node.js for "La Sapienza Computer Science" server.
+
+# WARNING: This bot is no longer mantained, but you are free to fork the code. For every info or support, contact the user Deco71
+
+Discord bot based on Javascript and node.js for "La Sapienza Computer Science" server.
 
 This bot can be easily adapted to other university servers.
 
